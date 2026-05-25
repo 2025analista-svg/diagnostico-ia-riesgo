@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnóstico de Exposición IA · Fernando Maldonado</title>
+
+  <meta property="og:title" content="¿Está tu empresa expuesta al riesgo de IA sin guardrails?" />
+  <meta property="og:description" content="Herramientas publicadas en GitHub eliminan las protecciones de modelos open-source en minutos. 4 preguntas para clasificar tu exposición y priorizar acciones." />
+  <meta property="og:type" content="website" />
+  <meta name="author" content="Fernando Maldonado" />
+  <meta property="article:author" content="https://www.linkedin.com/in/fernando-maldonado-ab13307" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¿Está tu empresa expuesta al riesgo de IA sin guardrails?" />
+  <meta name="twitter:description" content="4 preguntas para clasificar tu exposición: técnica, regulatoria y de cadena de suministro." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; }
+    body { background: #f5f3ef; font-family: 'Inter', sans-serif; color: #1a1a18; }
+    button { font-family: 'Inter', sans-serif; cursor: pointer; }
+    a { color: inherit; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade { animation: fadeUp 0.4s ease both; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+
+<script type="text/babel">
+const { useState } = React;
+
+const C = {
+  bg:      "#f5f3ef",
+  surface: "#ffffff",
+  border:  "#e2dfd8",
+  divider: "#eeebe5",
+  text:    "#1a1a18",
+  sub:     "#4a4a46",
+  muted:   "#8a8880",
+  faint:   "#f0ede8",
+  accent:  "#1a1a18",
+  navy:    "#1e2d40",
+  red:     "#b03a2e",
+  redBg:   "#fdf4f3",
+  amber:   "#9a6b1a",
+  amberBg: "#fdf8f0",
+  green:   "#2a6b48",
+  greenBg: "#f2f8f5",
+  rule:    "#c8c4bc",
+};
+
+const EXP = {
+  critica:  { label:"Exposición crítica",    color:C.red,   bg:C.redBg,   border:"#e8c0bc" },
+  alta:     { label:"Exposición alta",       color:C.red,   bg:C.redBg,   border:"#e8c0bc" },
+  mediaAlta:{ label:"Exposición media-alta", color:C.amber, bg:C.amberBg, border:"#e0d0a8" },
+  media:    { label:"Exposición media",      color:C.amber, bg:C.amberBg, border:"#e0d0a8" },
+  bajaMed:  { label:"Exposición baja-media", color:C.green, bg:C.greenBg, border:"#b0d4c0" },
+  baja:     { label:"Exposición baja",       color:C.green, bg:C.greenBg, border:"#b0d4c0" },
+};
+
+const UC = { alta: C.red, media: C.amber, baja: C.muted };
+
+const TREE = {
+  q:"¿Tiene visibilidad y control sobre qué versión de cada modelo de IA está en producción?",
+  s:"Puede identificar, verificar y auditar los modelos activos en sus sistemas",
+  yes:{
+    q:"¿Distribuye producto construido sobre modelos de IA a terceros?",
+    s:"Sus clientes reciben un producto o servicio que internamente usa IA",
+    yes:{
+      q:"¿Opera en un sector regulado?",
+      s:"Banca, salud, seguros, infraestructura crítica u otros sectores con supervisión activa",
+      yes:{
+        q:"¿Tiene documentación que sostenga su posición ante el regulador?",
+        s:"Inventario de modelos, registros de versiones, logs de cambios verificables",
+        yes:{
+          e:"media",
+          note:"Exposición contenida. La infraestructura técnica y documental está en orden. El riesgo residual está en la cadena de suministro con proveedores que usan IA.",
+          actions:[
+            {t:"Auditoría de proveedores con IA — 30 días", u:"media"},
+            {t:"Definir señales de cambio de exposición — 30 días", u:"baja"},
+          ]
+        },
+        no:{
+          e:"alta",
+          note:"Narrativa sin soporte documental es un riesgo regulatorio activo. El regulador puede preguntar antes de que haya incidente. La documentación es la prioridad.",
+          actions:[
+            {t:"Crear registros de versiones y logs de cambios — esta semana", u:"alta"},
+            {t:"Narrativa + documentación verificable para regulador — 2 semanas", u:"alta"},
+            {t:"Auditoría de proveedores con IA — 30 días", u:"media"},
+          ]
+        }
+      },
+      no:{
+        e:"mediaAlta",
+        note:"Responsabilidad de cadena de suministro hacia sus clientes. Sin regulador activo por ahora, pero sus propios clientes pueden preguntar. El riesgo es reputacional antes que técnico.",
+        actions:[
+          {t:"Narrativa preparada para clientes — 2 semanas", u:"alta"},
+          {t:"Auditoría de proveedores con IA — 30 días", u:"media"},
+          {t:"Definir señales de cambio de exposición — 30 días", u:"baja"},
+        ]
+      }
+    },
+    no:{
+      q:"¿Opera en un sector regulado?",
+      s:"Banca, salud, seguros, infraestructura crítica u otros sectores con supervisión activa",
+      yes:{
+        q:"¿Tiene documentación que sostenga su posición ante el regulador?",
+        s:"Inventario de modelos, registros de versiones, logs de cambios verificables",
+        yes:{
+          e:"bajaMed",
+          note:"Posición sólida. El riesgo es bajo si mantiene la documentación actualizada. Una narrativa proactiva antes de que lleguen las preguntas refuerza la posición.",
+          actions:[
+            {t:"Narrativa preparada para directivos y regulador — 2 semanas", u:"media"},
+            {t:"Definir señales de cambio de exposición — 30 días", u:"baja"},
+          ]
+        },
+        no:{
+          e:"media",
+          note:"El regulador puede preguntar antes de que ocurra cualquier incidente. La documentación es lo que convierte una narrativa en una posición defendible.",
+          actions:[
+            {t:"Crear registros de versiones y logs de cambios — 2 semanas", u:"alta"},
+            {t:"Narrativa para regulador respaldada por documentación — 2 semanas", u:"alta"},
+          ]
+        }
+      },
+      no:{
+        q:"¿Sus proveedores críticos usan IA en los servicios que le prestan?",
+        s:"Exposición indirecta aunque la empresa no use IA directamente en sus propios productos",
+        yes:{
+          e:"bajaMed",
+          note:"Exposición indirecta vía cadena de suministro. El riesgo no es propio pero puede heredarse si un proveedor tiene un incidente.",
+          actions:[
+            {t:"Mapa de proveedores con IA + mecanismo de alerta — 30 días", u:"media"},
+            {t:"Monitorizar evolución regulatoria sectorial", u:"baja"},
+          ]
+        },
+        no:{
+          e:"baja",
+          note:"Exposición baja en este momento. Sin acción técnica inmediata requerida. El riesgo es principalmente que la situación cambie sin que la empresa lo detecte.",
+          actions:[
+            {t:"Monitorizar evolución regulatoria — sin acción inmediata", u:"baja"},
+            {t:"Definir señales de cambio de exposición — 30 días", u:"baja"},
+          ]
+        }
+      }
+    }
+  },
+  no:{
+    e:"critica",
+    note:"Sin visibilidad sobre los modelos en producción, cualquier otra evaluación es sobre terreno desconocido. El inventario es el paso cero — sin él, no se puede saber qué se está usando ni si ha sido alterado.",
+    actions:[
+      {t:"Inventario de modelos en producción — esta semana", u:"alta"},
+      {t:"Narrativa preparada para clientes y directivos — 2 semanas", u:"alta"},
+      {t:"Definir señales de cambio de exposición — 30 días", u:"media"},
+    ]
+  }
+};
+
+function getNode(path) {
+  let n = TREE;
+  for (const s of path) n = n[s];
+  return n;
+}
+
+function Label({ children, style }) {
+  return (
+    <div style={{
+      fontSize: 9, fontWeight: 600, letterSpacing: "0.18em",
+      textTransform: "uppercase", color: C.muted,
+      fontFamily: "'Inter', sans-serif",
+      ...style
+    }}>
+      {children}
+    </div>
+  );
+}
+
+function Rule() {
+  return <div style={{ height: 1, background: C.border, margin: "0 0 24px" }} />;
+}
+
+function Intro({ onStart }) {
+  return (
+    <div className="fade">
+      {/* Eyebrow */}
+      <Label style={{ marginBottom: 16 }}>Evaluación de riesgo · Mayo 2026</Label>
+
+      {/* Title */}
+      <h1 style={{
+        fontFamily: "'Playfair Display', Georgia, serif",
+        fontSize: 32, fontWeight: 700, lineHeight: 1.2,
+        color: C.text, marginBottom: 20, letterSpacing: "-0.01em",
+      }}>
+        ¿Está su empresa expuesta al riesgo de modelos de IA sin guardrails?
+      </h1>
+
+      <Rule />
+
+      {/* Lead */}
+      <p style={{
+        fontSize: 16, lineHeight: 1.75, color: C.sub,
+        marginBottom: 32, fontWeight: 300,
+      }}>
+        Herramientas publicadas en GitHub permiten eliminar las protecciones de seguridad
+        de modelos open-source como Llama o Gemma en menos de diez minutos.
+        Miles de versiones modificadas circulan con libre acceso.
+        El <em>Financial Times</em> lo documentó esta semana.
+      </p>
+
+      {/* What it does */}
+      <div style={{ marginBottom: 32 }}>
+        {[
+          ["Clasifica la exposición", "Técnica, regulatoria o de cadena de suministro — según el perfil real de la empresa."],
+          ["Prioriza las acciones", "Qué hacer esta semana, en dos semanas, en treinta días."],
+          ["Señala qué vigilar", "Qué señales indican que la exposición ha cambiado."],
+        ].map(([t, d], i) => (
+          <div key={i} style={{
+            display: "flex", gap: 20, paddingBottom: 20,
+            borderBottom: i < 2 ? `1px solid ${C.divider}` : "none",
+            marginBottom: i < 2 ? 20 : 0,
+          }}>
+            <div style={{
+              fontSize: 11, color: C.muted, fontWeight: 500,
+              minWidth: 22, paddingTop: 2,
+            }}>
+              {String(i + 1).padStart(2, "0")}
+            </div>
+            <div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: C.text, marginBottom: 4 }}>{t}</div>
+              <div style={{ fontSize: 13, color: C.sub, lineHeight: 1.6, fontWeight: 300 }}>{d}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Note */}
+      <div style={{
+        borderLeft: `2px solid ${C.rule}`,
+        paddingLeft: 16, marginBottom: 36,
+        fontSize: 13, color: C.muted, lineHeight: 1.7, fontStyle: "italic",
+      }}>
+        Una empresa puede tener infraestructura impecable y estar expuesta si no tiene
+        narrativa preparada cuando llegue una pregunta externa. El riesgo reputacional
+        suele llegar antes que el técnico.
+      </div>
+
+      <button
+        onClick={onStart}
+        style={{
+          width: "100%", padding: "15px 24px",
+          background: C.text, color: "#fff", border: "none",
+          fontSize: 12, fontWeight: 600, letterSpacing: "0.12em",
+          textTransform: "uppercase", cursor: "pointer",
+          transition: "opacity 0.15s",
+        }}
+        onMouseEnter={e => e.target.style.opacity = "0.85"}
+        onMouseLeave={e => e.target.style.opacity = "1"}
+      >
+        Iniciar diagnóstico
+      </button>
+    </div>
+  );
+}
+
+function Question({ node, path, onAnswer, onBack }) {
+  const [hov, setHov] = useState(null);
+
+  return (
+    <div className="fade">
+      {/* Progress */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
+          <Label>Pregunta {path.length + 1} de 4</Label>
+          <Label>{Math.round((path.length / 4) * 100)}%</Label>
+        </div>
+        <div style={{ height: 1, background: C.border }}>
+          <div style={{
+            height: "100%", background: C.text,
+            width: `${(path.length / 4) * 100}%`,
+            transition: "width 0.4s ease",
+          }} />
+        </div>
+      </div>
+
+      {/* Question */}
+      <h2 style={{
+        fontFamily: "'Playfair Display', Georgia, serif",
+        fontSize: 24, fontWeight: 600, lineHeight: 1.35,
+        color: C.text, marginBottom: 12, letterSpacing: "-0.01em",
+      }}>
+        {node.q}
+      </h2>
+      <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.6, marginBottom: 36, fontWeight: 300 }}>
+        {node.s}
+      </p>
+
+      <Rule />
+
+      {/* Buttons */}
+      <div style={{ display: "flex", gap: 12, marginBottom: 20 }}>
+        {["yes", "no"].map(ans => (
+          <button
+            key={ans}
+            onClick={() => onAnswer(ans)}
+            onMouseEnter={() => setHov(ans)}
+            onMouseLeave={() => setHov(null)}
+            style={{
+              flex: 1, padding: "14px",
+              background: hov === ans ? C.text : C.surface,
+              color: hov === ans ? "#fff" : C.text,
+              border: `1px solid ${hov === ans ? C.text : C.border}`,
+              fontSize: 12, fontWeight: 600, letterSpacing: "0.12em",
+              textTransform: "uppercase", transition: "all 0.15s",
+            }}
+          >
+            {ans === "yes" ? "Sí" : "No"}
+          </button>
+        ))}
+      </div>
+
+      {path.length > 0 && (
+        <button onClick={onBack} style={{
+          background: "none", border: "none", color: C.muted,
+          fontSize: 12, letterSpacing: "0.08em", padding: "4px 0",
+          textDecoration: "underline", textDecorationColor: C.border,
+        }}>
+          ← Volver
+        </button>
+      )}
+    </div>
+  );
+}
+
+function Result({ node, onReset }) {
+  const cfg = EXP[node.e];
+
+  return (
+    <div className="fade">
+      {/* Result header */}
+      <Label style={{ marginBottom: 12 }}>Resultado del diagnóstico</Label>
+      <div style={{
+        background: cfg.bg, border: `1px solid ${cfg.border}`,
+        padding: "20px 22px", marginBottom: 28,
+      }}>
+        <div style={{
+          fontFamily: "'Playfair Display', Georgia, serif",
+          fontSize: 26, fontWeight: 700, color: cfg.color,
+          letterSpacing: "-0.01em",
+        }}>
+          {cfg.label}
+        </div>
+      </div>
+
+      {/* Note */}
+      <p style={{
+        fontSize: 14, color: C.sub, lineHeight: 1.75,
+        marginBottom: 28, fontWeight: 300,
+        borderLeft: `2px solid ${cfg.color}`, paddingLeft: 16,
+      }}>
+        {node.note}
+      </p>
+
+      <Rule />
+
+      {/* Actions */}
+      <Label style={{ marginBottom: 18 }}>Acciones recomendadas</Label>
+      <div style={{ marginBottom: 32 }}>
+        {node.actions.map((a, i) => (
+          <div key={i} style={{
+            display: "flex", gap: 18, alignItems: "flex-start",
+            paddingBottom: 16,
+            borderBottom: i < node.actions.length - 1 ? `1px solid ${C.divider}` : "none",
+            marginBottom: i < node.actions.length - 1 ? 16 : 0,
+          }}>
+            <div style={{
+              fontSize: 11, color: UC[a.u], fontWeight: 600,
+              minWidth: 22, paddingTop: 2,
+            }}>
+              {String(i + 1).padStart(2, "0")}
+            </div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 13, color: C.text, lineHeight: 1.5, fontWeight: 400 }}>{a.t}</div>
+            </div>
+            <div style={{
+              fontSize: 9, fontWeight: 600, letterSpacing: "0.14em",
+              textTransform: "uppercase", color: UC[a.u],
+              paddingTop: 3, whiteSpace: "nowrap",
+            }}>
+              {a.u}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <Rule />
+
+      {/* Signals */}
+      <Label style={{ marginBottom: 12 }}>Señales que cambian este diagnóstico</Label>
+      <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.8, marginBottom: 28, fontWeight: 300 }}>
+        Nuevo modelo open-source desplegado sin validación ·
+        Pregunta de cliente o regulador recibida ·
+        Proveedor crítico anuncia uso de IA ·
+        Cambio regulatorio sectorial
+      </p>
+
+      {/* Going first */}
+      <div style={{
+        borderLeft: `2px solid ${C.rule}`,
+        paddingLeft: 16, marginBottom: 36,
+        fontSize: 13, color: C.muted, lineHeight: 1.7, fontStyle: "italic",
+      }}>
+        La misma exposición técnica tiene consecuencias radicalmente distintas según si la empresa
+        comunica su posición antes de que le pregunten o responde bajo presión.
+        Las acciones anteriores tienen mayor retorno cuanto antes se ejecuten.
+      </div>
+
+      <button
+        onClick={onReset}
+        style={{
+          width: "100%", padding: "13px 24px",
+          background: "none", border: `1px solid ${C.border}`,
+          color: C.muted, fontSize: 12, fontWeight: 500,
+          letterSpacing: "0.1em", textTransform: "uppercase",
+          cursor: "pointer", transition: "all 0.15s",
+        }}
+        onMouseEnter={e => { e.target.style.borderColor = C.text; e.target.style.color = C.text; }}
+        onMouseLeave={e => { e.target.style.borderColor = C.border; e.target.style.color = C.muted; }}
+      >
+        ← Nuevo diagnóstico
+      </button>
+    </div>
+  );
+}
+
+function App() {
+  const [phase, setPhase] = useState("intro");
+  const [path, setPath]   = useState([]);
+
+  const node     = getNode(path);
+  const isResult = node && "e" in node;
+
+  const onAnswer = ans => {
+    const np = [...path, ans];
+    setPath(np);
+    if ("e" in getNode(np)) setPhase("result");
+  };
+
+  return (
+    <div style={{ minHeight: "100vh", background: C.bg, display: "flex", justifyContent: "center", padding: "60px 24px 80px" }}>
+      <div style={{ width: "100%", maxWidth: 560 }}>
+
+        {/* Header */}
+        <div style={{ marginBottom: 48 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 10 }}>
+            <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.2em", textTransform: "uppercase", color: C.muted }}>
+              Análisis de Riesgo
+            </div>
+            <div style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em" }}>
+              Mayo 2026
+            </div>
+          </div>
+          <div style={{ height: 2, background: C.text }} />
+        </div>
+
+        {/* Content */}
+        <div style={{ background: C.surface, border: `1px solid ${C.border}`, padding: "40px 36px" }}>
+          {phase === "intro"  && <Intro  onStart={() => setPhase("quiz")} />}
+          {phase === "quiz"   && !isResult && <Question node={node} path={path} onAnswer={onAnswer} onBack={() => setPath(path.slice(0,-1))} />}
+          {phase === "result" && isResult  && <Result   node={node} onReset={() => { setPath([]); setPhase("intro"); }} />}
+        </div>
+
+        {/* Footer */}
+        <div style={{
+          marginTop: 24, display: "flex", justifyContent: "space-between",
+          alignItems: "center",
+        }}>
+          <div style={{ fontSize: 11, color: C.muted, fontWeight: 300 }}>
+            Análisis por{" "}
+            <a
+              href="https://www.linkedin.com/in/fernando-maldonado-ab13307"
+              target="_blank" rel="noopener noreferrer"
+              style={{ color: C.text, fontWeight: 500, textDecoration: "underline", textDecorationColor: C.border }}
+            >
+              Fernando Maldonado
+            </a>
+          </div>
+          <div style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em" }}>
+            Árbol de diagnóstico · 4 preguntas
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
