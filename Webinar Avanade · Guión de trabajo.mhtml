@@ -1,0 +1,1471 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: file:///C:/Users/34639/Downloads/canvas_webinar_avanade_4.html
+Subject: =?utf-8?Q?Webinar=20Avanade=20=C2=B7=20Gui=C3=B3n=20de=20trabajo?=
+Date: Fri, 29 May 2026 14:22:42 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--p26hnzRWL0QZit1tUyOT5R1dcIpDnZ31SycZYQqyle----"
+
+
+------MultipartBoundary--p26hnzRWL0QZit1tUyOT5R1dcIpDnZ31SycZYQqyle----
+Content-Type: text/html
+Content-ID: <frame-4227E04074172C85CB45929036D2E227@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/Users/34639/Downloads/canvas_webinar_avanade_4.html
+
+<!DOCTYPE html><html lang=3D"es"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-6dcf387a-7d7f-4cc5-8d40-6122dc0a9c0c@mhtml.blink" />
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Webinar Avanade =C2=B7 Gui=C3=B3n de trabajo</title>
+
+</head>
+<body>
+
+<header class=3D"hdr">
+  <div style=3D"display:flex;align-items:center;gap:13px">
+    <div class=3D"hdr-logo">AV<span>=C2=B7</span>NAD</div>
+    <div class=3D"hdr-sep"></div>
+    <div>
+      <div class=3D"hdr-title">Webinar Ciberseguridad IA =E2=80=94 Gui=C3=
+=B3n de trabajo</div>
+      <div class=3D"hdr-sub">4 decisiones abiertas =C2=B7 Lanzamiento junio=
+ 2026</div>
+    </div>
+  </div>
+  <div class=3D"prog-wrap">
+    <span class=3D"prog-lbl">Decisiones</span>
+    <div class=3D"prog-outer"><div class=3D"prog-inner" id=3D"pbar"></div><=
+/div>
+    <span class=3D"prog-count" id=3D"pcount">0 / 4</span>
+  </div>
+</header>
+
+<div class=3D"layout">
+<main class=3D"main">
+
+  <!-- NAV -->
+  <div class=3D"sec-nav">
+    <button class=3D"pill" id=3D"pnav-base" style=3D"background:var(--navy)=
+;color:white;border-color:var(--navy)">Base confirmada</button>
+    <span style=3D"width:1px;background:var(--border2);margin:0 2px;align-s=
+elf:stretch;display:inline-block"></span>
+    <button class=3D"pill active" id=3D"pnav-c1">T=C3=ADtulo</button>
+    <button class=3D"pill" id=3D"pnav-c2">An=C3=A9cdotas</button>
+    <button class=3D"pill" id=3D"pnav-c3">CTA</button>
+    <button class=3D"pill" id=3D"pnav-c4">Reparto</button>
+    <span style=3D"width:1px;background:var(--border2);margin:0 2px;align-s=
+elf:stretch;display:inline-block"></span>
+    <button class=3D"pill" id=3D"pnav-story" style=3D"background:#065f46;co=
+lor:white;border-color:#065f46">Gui=C3=B3n</button>
+  </div>
+
+  <!-- BASE CONFIRMADA -->
+  <div class=3D"confirmed-strip" id=3D"base">
+    <div class=3D"cs-label">Base confirmada =E2=80=94 no hay que volver aqu=
+=C3=AD</div>
+    <div class=3D"cs-grid">
+      <div class=3D"cs-item"><span class=3D"cs-check">=E2=9C=93</span><div =
+class=3D"cs-text"><strong>Estructura 70/30</strong> =E2=80=94 IA Security c=
+omo cuerpo principal, SOC ag=C3=A9ntico como horizonte de cierre</div></div=
+>
+      <div class=3D"cs-item"><span class=3D"cs-check">=E2=9C=93</span><div =
+class=3D"cs-text"><strong>Audiencia</strong> =E2=80=94 mid-market, centro =
+=3D empresa con SOC peque=C3=B1o. Mensaje alcanza sin-SOC y SOC mediano</di=
+v></div>
+      <div class=3D"cs-item"><span class=3D"cs-check">=E2=9C=93</span><div =
+class=3D"cs-text"><strong>Dos perfiles</strong> =E2=80=94 CISO ya preocupad=
+o =C2=B7 decisor de negocio a=C3=BAn no consciente del riesgo</div></div>
+      <div class=3D"cs-item"><span class=3D"cs-check">=E2=9C=93</span><div =
+class=3D"cs-text"><strong>Tres problemas</strong> =E2=80=94 visibilidad IA =
+=C2=B7 gobierno IA =C2=B7 evoluci=C3=B3n del SOC</div></div>
+      <div class=3D"cs-item"><span class=3D"cs-check">=E2=9C=93</span><div =
+class=3D"cs-text"><strong>Mensaje clave</strong> =E2=80=94 "La IA amplifica=
+ los riesgos que ya tienes. No los crea."</div></div>
+      <div class=3D"cs-item"><span class=3D"cs-check">=E2=9C=93</span><div =
+class=3D"cs-text"><strong>Encuadre</strong> =E2=80=94 hablar de incidentes =
+de seguridad en general, no de "ataques con IA"</div></div>
+    </div>
+  </div>
+
+  <!-- CARD 1: T=C3=8DTULO -->
+  <div class=3D"card" id=3D"c1">
+    <div class=3D"card-hdr">
+      <span class=3D"badge" id=3D"b1">A</span>
+      <div class=3D"card-meta">
+        <span class=3D"imp imp-h">Pendiente</span>
+        <div class=3D"card-title">T=C3=ADtulo del webinar</div>
+        <div class=3D"card-why">Determina el click-through y la expectativa=
+ del oyente. Elegir en coherencia con la estructura 70/30: el t=C3=ADtulo d=
+ebe activar a los dos perfiles de audiencia.</div>
+      </div>
+      <div class=3D"chev" id=3D"cv1" style=3D"transform: rotate(180deg);">=
+=E2=96=BE</div>
+    </div>
+    <div class=3D"card-body open" id=3D"cb1">
+      <div class=3D"card-inner">
+        <div class=3D"opts">
+          <div class=3D"opt" id=3D"o1A">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 1 =E2=80=94 Lenguaje llano =
+=C2=B7 perfil directivo</div>
+            <div class=3D"opt-title">"Ciberseguridad en la era de la IA: pr=
+otecci=C3=B3n real para empresas reales"</div>
+            <div class=3D"opt-desc">Activa al decisor de negocio no t=C3=A9=
+cnico. Mensaje sin jerga, orientado a lo concreto. Buen encaje con el perfi=
+l directivo que todav=C3=ADa no es consciente del riesgo.</div>
+            <div class=3D"opt-risk">Puede leerse como gen=C3=A9rico para el=
+ CISO t=C3=A9cnico. Compite en un espacio muy saturado de mensajes gen=C3=
+=A9ricos de IA.</div>
+          </div>
+          <div class=3D"opt" id=3D"o1B">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 2 =E2=80=94 Pregunta =C2=B7 =
+activa los dos perfiles</div>
+            <div class=3D"opt-title">"Tu empresa ya usa IA. =C2=BFSabes qui=
+=C3=A9n la est=C3=A1 protegiendo?"</div>
+            <div class=3D"opt-desc">Formato pregunta que genera engagement =
+inmediato. Activa tanto al CISO preocupado (que ya se hace esa pregunta) co=
+mo al directivo que no se la hab=C3=ADa hecho a=C3=BAn. Encaja directamente=
+ con el Problema 1 del gui=C3=B3n.</div>
+            <div class=3D"opt-risk">Puede leerse como alarmista si la audie=
+ncia no se identifica con el uso de IA todav=C3=ADa.</div>
+          </div>
+          <div class=3D"opt" id=3D"o1C">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 3 =E2=80=94 Variaci=C3=B3n p=
+ropia</div>
+            <div class=3D"opt-title">Escribir aqu=C3=AD</div>
+            <div class=3D"opt-desc">Si ninguna de las anteriores encaja exa=
+ctamente, usar el campo de abajo.</div>
+          </div>
+        </div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Variaci=C3=B3n o ajuste=
+</label><textarea id=3D"f1" style=3D"min-height:52px" placeholder=3D"Si hay=
+ una variaci=C3=B3n que encaja mejor..."></textarea></div>
+        <div class=3D"btn-row"><button class=3D"btn-resolve" id=3D"btn1">=
+=E2=9C=93 Confirmar t=C3=ADtulo</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2: AN=C3=89CDOTAS -->
+  <div class=3D"card" id=3D"c2">
+    <div class=3D"card-hdr">
+      <span class=3D"badge" id=3D"b2">B</span>
+      <div class=3D"card-meta">
+        <span class=3D"imp imp-h">Pendiente</span>
+        <div class=3D"card-title">Las tres an=C3=A9cdotas =E2=80=94 lo que =
+hace al gui=C3=B3n cre=C3=ADble</div>
+        <div class=3D"card-why">El gui=C3=B3n tiene los tres problemas defi=
+nidos. Las an=C3=A9cdotas son el material que los vuelve reales. Sin ellas =
+el webinar suena a presentaci=C3=B3n corporativa, no a conversaci=C3=B3n.</=
+div>
+      </div>
+      <div class=3D"chev" id=3D"cv2" style=3D"transform: rotate(180deg);">=
+=E2=96=BE</div>
+    </div>
+    <div class=3D"card-body open" id=3D"cb2">
+      <div class=3D"card-inner">
+        <div class=3D"chklist">
+          <div class=3D"chk" id=3D"chk1">
+            <div class=3D"chk-box" id=3D"cb_chk1"></div>
+            <div class=3D"chk-txt"><strong>Problema 1 =E2=80=94 Visibilidad=
+:</strong> cliente que no sab=C3=ADa cu=C3=A1ntas herramientas de IA ten=C3=
+=ADa activas o a qu=C3=A9 datos acced=C3=ADan. El CISO que descubri=C3=B3 e=
+l problema por accidente.</div>
+          </div>
+          <div class=3D"chk" id=3D"chk2">
+            <div class=3D"chk-box" id=3D"cb_chk2"></div>
+            <div class=3D"chk-txt"><strong>Problema 2 =E2=80=94 Gobierno:</=
+strong> el CISO que nos contact=C3=B3 porque "esto avanza muy r=C3=A1pido y=
+ no tenemos control" =E2=80=94 impulsado desde arriba por la alta direcci=
+=C3=B3n, sin que IT pudiera frenarlo.</div>
+          </div>
+          <div class=3D"chk" id=3D"chk3">
+            <div class=3D"chk-box" id=3D"cb_chk3"></div>
+            <div class=3D"chk-txt"><strong>Problema 3 =E2=80=94 SOC:</stron=
+g> cliente que ten=C3=ADa un SOC b=C3=A1sico y necesitaba modernizarlo sin =
+detener la operaci=C3=B3n. O cliente que no ten=C3=ADa SOC y vio que montar=
+ uno moderno era m=C3=A1s accesible de lo que pensaba.</div>
+          </div>
+        </div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Borrador an=C3=A9cdota =
+=C2=B7 Ponente A</label><textarea id=3D"f2a" placeholder=3D"El otro d=C3=AD=
+a un cliente vino con..."></textarea></div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Borrador an=C3=A9cdota =
+=C2=B7 Ponente B</label><textarea id=3D"f2b" placeholder=3D"En mi caso lo q=
+ue me encuentro m=C3=A1s es..."></textarea></div>
+        <div class=3D"btn-row"><button class=3D"btn-resolve" id=3D"btn2">=
+=E2=9C=93 An=C3=A9cdotas listas</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3: CTA -->
+  <div class=3D"card" id=3D"c3">
+    <div class=3D"card-hdr">
+      <span class=3D"badge" id=3D"b3">C</span>
+      <div class=3D"card-meta">
+        <span class=3D"imp imp-h">Pendiente</span>
+        <div class=3D"card-title">Call to action =E2=80=94 =C2=BFqu=C3=A9 a=
+cci=C3=B3n concreta se pide al final?</div>
+        <div class=3D"card-why">Define si el webinar genera leads o solo im=
+agen. Debe ser coherente con los dos perfiles de audiencia: el CISO t=C3=A9=
+cnico y el directivo de negocio pueden querer conversaciones distintas.</di=
+v>
+      </div>
+      <div class=3D"chev" id=3D"cv3">=E2=96=BE</div>
+    </div>
+    <div class=3D"card-body" id=3D"cb3">
+      <div class=3D"card-inner">
+        <div class=3D"opts">
+          <div class=3D"opt" id=3D"o3A">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 1 =E2=80=94 Conversaci=C3=B3=
+n de diagn=C3=B3stico</div>
+            <div class=3D"opt-title">"30 minutos para evaluar c=C3=B3mo est=
+=C3=A1 tu seguridad hoy"</div>
+            <div class=3D"opt-desc">Baja fricci=C3=B3n, propuesta de valor =
+clara. No requiere que el oyente sepa nada previo. Funciona para los dos pe=
+rfiles.</div>
+            <div class=3D"opt-risk">Requiere respuesta =C3=A1gil. Si la age=
+nda est=C3=A1 saturada post-lanzamiento, las conversaciones se enfr=C3=ADan=
+ r=C3=A1pido.</div>
+          </div>
+          <div class=3D"opt" id=3D"o3B">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 2 =E2=80=94 Demo del SOC en =
+acci=C3=B3n</div>
+            <div class=3D"opt-title">"Ver c=C3=B3mo funciona el SOC intelig=
+ente en un caso real"</div>
+            <div class=3D"opt-desc">Mayor intenci=C3=B3n de compra en quien=
+ lo solicita. Cualifica mejor al lead. M=C3=A1s adecuado para el perfil t=
+=C3=A9cnico.</div>
+            <div class=3D"opt-risk">Mayor fricci=C3=B3n de entrada. El dire=
+ctivo no t=C3=A9cnico puede no verse reflejado en este CTA.</div>
+          </div>
+          <div class=3D"opt" id=3D"o3C">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 3 =E2=80=94 Contenido de seg=
+uimiento</div>
+            <div class=3D"opt-title">"Descarga la gu=C3=ADa / ap=C3=BAntate=
+ al pr=C3=B3ximo evento"</div>
+            <div class=3D"opt-desc">Ampl=C3=ADa el alcance. Funciona para a=
+udiencias en fase de educaci=C3=B3n, no de decisi=C3=B3n.</div>
+            <div class=3D"opt-risk">No genera oportunidades a corto si el o=
+bjetivo es lead generation inmediato.</div>
+          </div>
+        </div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Canal de contacto en la=
+ diapositiva de cierre</label><textarea id=3D"f3" style=3D"min-height:50px"=
+ placeholder=3D"email / LinkedIn / landing espec=C3=ADfica del webinar / fo=
+rmulario..."></textarea></div>
+        <div class=3D"btn-row"><button class=3D"btn-resolve" id=3D"btn3">=
+=E2=9C=93 Confirmar CTA</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4: REPARTO -->
+  <div class=3D"card" id=3D"c4">
+    <div class=3D"card-hdr">
+      <span class=3D"badge" id=3D"b4">D</span>
+      <div class=3D"card-meta">
+        <span class=3D"imp imp-m">Medio</span>
+        <div class=3D"card-title">Reparto entre los ponentes =E2=80=94 qui=
+=C3=A9n lleva qu=C3=A9 bloque</div>
+        <div class=3D"card-why">Condiciona la preparaci=C3=B3n del gui=C3=
+=B3n y la coordinaci=C3=B3n antes de grabar. Definirlo ahora permite al mod=
+erador estructurar el script de forma personalizada.</div>
+      </div>
+      <div class=3D"chev" id=3D"cv4">=E2=96=BE</div>
+    </div>
+    <div class=3D"card-body" id=3D"cb4">
+      <div class=3D"card-inner">
+        <div class=3D"opts">
+          <div class=3D"opt" id=3D"o4A">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 1 =E2=80=94 Por perfil natur=
+al</div>
+            <div class=3D"opt-title">Ponente A: problemas del cliente + por=
+ qu=C3=A9 Avanade =C2=B7 Ponente B: soluci=C3=B3n t=C3=A9cnica + SOC</div>
+            <div class=3D"opt-desc">Cada uno habla desde su zona de mayor c=
+redibilidad. Menos coordinaci=C3=B3n previa. El moderador hace de puente.</=
+div>
+            <div class=3D"opt-risk">Puede sentirse como dos registros disti=
+ntos si los estilos difieren mucho.</div>
+          </div>
+          <div class=3D"opt" id=3D"o4B">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 2 =E2=80=94 Intercalado por =
+problema</div>
+            <div class=3D"opt-title">Cada ponente presenta un problema y su=
+ soluci=C3=B3n =E2=80=94 alternando a lo largo del webinar</div>
+            <div class=3D"opt-desc">Mayor dinamismo. Dos voces con m=C3=A1s=
+ frecuencia. Requiere m=C3=A1s coordinaci=C3=B3n en el script.</div>
+            <div class=3D"opt-risk">Si uno se extiende, el moderador pierde=
+ el control del tiempo.</div>
+          </div>
+          <div class=3D"opt" id=3D"o4C">
+            <div class=3D"opt-radio"></div>
+            <div class=3D"opt-lbl">Opci=C3=B3n 3 =E2=80=94 Uno presenta, el=
+ otro refuerza</div>
+            <div class=3D"opt-title">Un ponente lleva el hilo, el otro a=C3=
+=B1ade en momentos clave</div>
+            <div class=3D"opt-desc">M=C3=ADnima coordinaci=C3=B3n previa. F=
+unciona si hay diferencia clara de experiencia en presentaci=C3=B3n.</div>
+            <div class=3D"opt-risk">Puede percibirse como uno habla y el ot=
+ro asiente.</div>
+          </div>
+        </div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas de perfil para el=
+ moderador</label><textarea id=3D"f4" style=3D"min-height:50px" placeholder=
+=3D"Ponente A =3D perfil comercial / narrativa de cliente =C2=B7 Ponente B =
+=3D perfil t=C3=A9cnico / arquitectura..."></textarea></div>
+        <div class=3D"btn-row"><button class=3D"btn-resolve" id=3D"btn4">=
+=E2=9C=93 Confirmar reparto</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GUI=C3=93N -->
+  <div class=3D"divider" id=3D"story"><div class=3D"div-line"></div><span c=
+lass=3D"div-txt">Gui=C3=B3n =E2=80=94 borrador de trabajo</span><div class=
+=3D"div-line"></div></div>
+  <div>
+    <div class=3D"story-hdr">
+      <div><div class=3D"story-hdr-title">Arco narrativo =C2=B7 28=E2=80=93=
+30 min</div><div class=3D"story-hdr-sub">Estructura 70% IA Security =C2=B7 =
+30% SOC ag=C3=A9ntico =C2=B7 Dos perfiles de audiencia activos</div></div>
+      <span class=3D"story-dur">28=E2=80=9330 min</span>
+    </div>
+    <div class=3D"story-flow">
+
+      <!-- B0 -->
+      <div class=3D"sblk s0"><div class=3D"sblk-hdr">
+        <div class=3D"sblk-time">B0</div>
+        <div class=3D"sblk-meta"><div class=3D"sblk-lbl">Apertura =C2=B7 2 =
+min</div><div class=3D"sblk-title">El mundo en que vive el oyente =E2=80=94=
+ antes de presentarse</div><div class=3D"sblk-brief">Datos que activan los =
+dos perfiles. Nada de "hola soy X de Avanade" todav=C3=ADa.</div></div>
+        <div class=3D"sblk-chev" id=3D"sc-s0" style=3D"transform: rotate(18=
+0deg);">=E2=96=BE</div>
+      </div><div class=3D"sblk-body open" id=3D"sb-s0"><div class=3D"sblk-i=
+nner">
+        <div class=3D"alert-box warn"><span>=E2=9A=A0</span><div><strong>En=
+cuadre acordado:</strong> no hablar de "ataques con IA" ni de "los atacante=
+s usan IA". El foco es defensivo. Hablar de incidentes de seguridad en gene=
+ral =E2=80=94 si mencionas al atacante con IA el oyente se pregunta si a =
+=C3=A9l le atacan con IA o no, y se distrae.</div></div>
+        <div class=3D"sblk-narr">"Las empresas espa=C3=B1olas registraron m=
+=C3=A1s de 120.000 incidentes de seguridad en 2024 =E2=80=94 un 20% m=C3=A1=
+s que el a=C3=B1o anterior. Al mismo tiempo, el 70% de las empresas ya tien=
+e inteligencia artificial operando en alg=C3=BAn proceso cr=C3=ADtico. <str=
+ong>Esas dos realidades juntas plantean una pregunta que muchos equipos de =
+seguridad todav=C3=ADa no han respondido.</strong>"<br><br>Pausa. Presentac=
+i=C3=B3n en 20 segundos: credencial de terreno, no lista de servicios.</div=
+>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas =E2=80=94 dato de=
+ apertura</label><textarea placeholder=3D"=C2=BFHay un dato interno de Avan=
+ade m=C3=A1s potente? =C2=BFN=C3=BAmero de clientes, incidentes gestionados=
+, porcentaje de empresas sin inventario IA...?"></textarea></div>
+      </div></div></div>
+
+      <!-- B1 -->
+      <div class=3D"sblk s1"><div class=3D"sblk-hdr">
+        <div class=3D"sblk-time">B1</div>
+        <div class=3D"sblk-meta"><div class=3D"sblk-lbl">Tres problemas =C2=
+=B7 8=E2=80=9310 min</div><div class=3D"sblk-title">Los tres dolores =E2=80=
+=94 que cada oyente piense "eso me pasa a m=C3=AD"</div><div class=3D"sblk-=
+brief">Estructura: del m=C3=A1s general al m=C3=A1s operacional. Cada probl=
+ema cierra con la an=C3=A9cdota concreta del ponente.</div></div>
+        <div class=3D"sblk-chev" id=3D"sc-s1">=E2=96=BE</div>
+      </div><div class=3D"sblk-body" id=3D"sb-s1"><div class=3D"sblk-inner"=
+>
+        <div class=3D"alert-box tip"><span>=F0=9F=92=A1</span><div>Los dos =
+perfiles de audiencia entran por puertas distintas: el <strong>CISO ya preo=
+cupado</strong> necesita que le confirmes que hay riesgo real y que hay sol=
+uci=C3=B3n. El <strong>perfil de negocio</strong> todav=C3=ADa no es consci=
+ente y necesita dos saltos: primero entender el riesgo, luego querer la sol=
+uci=C3=B3n. El gui=C3=B3n tiene que activar los dos en este bloque.</div></=
+div>
+        <span class=3D"snlbl">Problema 1 =E2=80=94 No sabes qu=C3=A9 IA tie=
+nes dentro</span>
+        <div class=3D"sblk-narr">Tu organizaci=C3=B3n ya usa inteligencia a=
+rtificial. Copilot, automatizaciones, asistentes, integraciones en los proc=
+esos. Pero la mayor=C3=ADa de empresas no puede responder con precisi=C3=B3=
+n: =C2=BFcu=C3=A1ntas herramientas de IA est=C3=A1n activas? =C2=BFQui=C3=
+=A9n las usa? =C2=BFA qu=C3=A9 datos tienen acceso y con qu=C3=A9 permisos?=
+<br><br><strong>Lo que no ves, no puedes proteger.</strong><br><br><em>[An=
+=C3=A9cdota =E2=80=94 pendiente =C2=B7 Decisi=C3=B3n B]</em></div>
+        <span class=3D"snlbl">Problema 2 =E2=80=94 Tienes IA en producci=C3=
+=B3n pero sin gobierno</span>
+        <div class=3D"sblk-narr">Una vez sabes lo que tienes, viene la sigu=
+iente pregunta sin responder: =C2=BFqui=C3=A9n decide c=C3=B3mo se usa? =C2=
+=BFQui=C3=A9n tiene acceso a qu=C3=A9? =C2=BFQu=C3=A9 pasa cuando un agente=
+ aut=C3=B3nomo toma una acci=C3=B3n que nadie supervis=C3=B3?<br><br><stron=
+g>Desplegar IA sin una capa de gobierno no es innovar =E2=80=94 es asumir u=
+n riesgo que todav=C3=ADa no has medido.</strong><br><br><em>[An=C3=A9cdota=
+ =E2=80=94 pendiente =C2=B7 Decisi=C3=B3n B]</em></div>
+        <span class=3D"snlbl">Problema 3 =E2=80=94 Tu SOC no est=C3=A1 dise=
+=C3=B1ado para este per=C3=ADmetro</span>
+        <div class=3D"sblk-narr">El SOC que tienes hoy fue dise=C3=B1ado pa=
+ra proteger un entorno que ya no existe. Hay agentes aut=C3=B3nomos, modelo=
+s en producci=C3=B3n, APIs conectadas a datos sensibles. M=C3=A1s activos, =
+m=C3=A1s superficie de ataque, el mismo equipo.<br><br><strong>Pasar a un m=
+odelo de operaciones moderno sin detener la defensa en el proceso es el ret=
+o que ning=C3=BAn equipo interno puede resolver solo.</strong><br><br><em>[=
+An=C3=A9cdota =E2=80=94 pendiente =C2=B7 Decisi=C3=B3n B]</em></div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas de ajuste</label>=
+<textarea placeholder=3D"=C2=BFEl problema 3 del SOC resuena con la audienc=
+ia confirmada o hay que aligerarlo dado el peso 70/30? =C2=BFCu=C3=A1l de l=
+os tres tiene m=C3=A1s peso para los clientes hoy?"></textarea></div>
+      </div></div></div>
+
+      <!-- B2 -->
+      <div class=3D"sblk s2"><div class=3D"sblk-hdr">
+        <div class=3D"sblk-time">B2</div>
+        <div class=3D"sblk-meta"><div class=3D"sblk-lbl">La bisagra =C2=B7 =
+3 min</div><div class=3D"sblk-title">Resolver la tensi=C3=B3n antes de que =
+surja en la cabeza del oyente</div><div class=3D"sblk-brief">La objeci=C3=
+=B3n impl=C3=ADcita: "=C2=BFme est=C3=A1is diciendo que la IA tiene riesgos=
+ Y a la vez que la use para defenderme?"</div></div>
+        <div class=3D"sblk-chev" id=3D"sc-s2">=E2=96=BE</div>
+      </div><div class=3D"sblk-body" id=3D"sb-s2"><div class=3D"sblk-inner"=
+>
+        <div class=3D"alert-box info"><span>=E2=9A=A1</span><div>Este bloqu=
+e resuelve la objeci=C3=B3n impl=C3=ADcita que identific=C3=B3 el equipo en=
+ el kick-off. Hay que decirlo antes de que el oyente lo piense. Si no lo re=
+suelves aqu=C3=AD, el oyente se queda enganchado en la contradicci=C3=B3n y=
+ deja de escuchar la soluci=C3=B3n.</div></div>
+        <div class=3D"sblk-narr">"A estas alturas quiz=C3=A1s est=C3=A1is p=
+ensando: <em>me est=C3=A1n diciendo que la IA tiene riesgos y a la vez que =
+la use para protegerme. =C2=BFNo es contradictorio?</em><br><br>No. El mens=
+aje no es que la IA sea peligrosa. <strong>El mensaje es que la IA amplific=
+a los riesgos que ya tienes en tu organizaci=C3=B3n.</strong> Los datos mal=
+ protegidos siguen mal protegidos. Los accesos no controlados siguen sin co=
+ntrolar. La IA no los crea =E2=80=94 los hace m=C3=A1s visibles, m=C3=A1s r=
+=C3=A1pidos, m=C3=A1s dif=C3=ADciles de ignorar.<br><br>Por eso la respuest=
+a correcta no es frenar la IA. Es desplegarla con la capa de seguridad que =
+le corresponde. <strong>Y eso es exactamente lo que vamos a contaros."</str=
+ong></div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas de ajuste</label>=
+<textarea placeholder=3D"=C2=BFHay una formulaci=C3=B3n m=C3=A1s propia de =
+Avanade para expresar esto? =C2=BFTiene que ser m=C3=A1s corto o puede tene=
+r m=C3=A1s peso?"></textarea></div>
+      </div></div></div>
+
+      <!-- B3 -->
+      <div class=3D"sblk s3"><div class=3D"sblk-hdr">
+        <div class=3D"sblk-time">B3</div>
+        <div class=3D"sblk-meta"><div class=3D"sblk-lbl">Soluci=C3=B3n Avan=
+ade =C2=B7 8=E2=80=9310 min</div><div class=3D"sblk-title">C=C3=B3mo lo res=
+uelve Avanade =E2=80=94 una palanca por problema</div><div class=3D"sblk-br=
+ief">Cada palanca conecta directamente con un problema de B1. Mensaje doble=
+ en la palanca 3 seg=C3=BAn si el cliente tiene SOC o no.</div></div>
+        <div class=3D"sblk-chev" id=3D"sc-s3">=E2=96=BE</div>
+      </div><div class=3D"sblk-body" id=3D"sb-s3"><div class=3D"sblk-inner"=
+>
+        <span class=3D"snlbl">Palanca 1 =E2=86=92 Problema 1 =E2=80=94 visi=
+bilidad</span>
+        <div class=3D"sblk-narr"><strong>Inventario y visibilidad de todos =
+tus activos IA.</strong> Avanade mapea qu=C3=A9 herramientas de IA est=C3=
+=A1n activas en tu organizaci=C3=B3n, qui=C3=A9n las usa, a qu=C3=A9 datos =
+acceden y con qu=C3=A9 permisos. Sobre Microsoft Purview, Defender y Sentin=
+el. No puedes proteger lo que no ves =E2=80=94 esto es el punto de partida.=
+</div>
+        <span class=3D"snlbl">Palanca 2 =E2=86=92 Problema 2 =E2=80=94 gobi=
+erno</span>
+        <div class=3D"sblk-narr"><strong>Modelo de gobierno para que la IA =
+se use de forma segura y trazable.</strong> Pol=C3=ADticas de uso, controle=
+s de acceso granulares, monitorizaci=C3=B3n de agentes aut=C3=B3nomos. Si C=
+opilot o Azure AI ya est=C3=A1n en producci=C3=B3n, Avanade a=C3=B1ade la c=
+apa de gobierno que les da sostenibilidad sin frenar la adopci=C3=B3n.</div=
+>
+        <span class=3D"snlbl">Palanca 3 =E2=86=92 Problema 3 =E2=80=94 SOC =
+=C2=B7 dos mensajes seg=C3=BAn el punto de partida</span>
+        <div class=3D"two-col">
+          <div class=3D"two-col-item">
+            <div class=3D"two-col-label" style=3D"color:var(--navy)">Si ya =
+tienes SOC</div>
+            <div class=3D"two-col-text">Avanade te ayuda a transformarlo =
+=E2=80=94 automatizaci=C3=B3n de triaje, visibilidad ampliada a nuevos acti=
+vos IA, operaci=C3=B3n continua sin interrumpir la defensa en el proceso.</=
+div>
+          </div>
+          <div class=3D"two-col-item">
+            <div class=3D"two-col-label" style=3D"color:var(--green)">Si a=
+=C3=BAn no tienes SOC</div>
+            <div class=3D"two-col-text">Avanade te lo monta directamente mo=
+derno. Ya incluye las automatizaciones de IA desde el d=C3=ADa 1 =E2=80=94 =
+no tienes que modernizarlo despu=C3=A9s porque nace moderno.</div>
+          </div>
+        </div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas de ajuste</label>=
+<textarea placeholder=3D"=C2=BFQu=C3=A9 demo o ejemplo visual puede acompa=
+=C3=B1ar este bloque? =C2=BFHay una capacidad de Avanade que falta menciona=
+r?"></textarea></div>
+      </div></div></div>
+
+      <!-- B4 -->
+      <div class=3D"sblk s4"><div class=3D"sblk-hdr">
+        <div class=3D"sblk-time">B4</div>
+        <div class=3D"sblk-meta"><div class=3D"sblk-lbl">Por qu=C3=A9 Avana=
+de =C2=B7 3=E2=80=934 min</div><div class=3D"sblk-title">Cerrar la brecha e=
+ntre "me convence" y "conf=C3=ADo en este proveedor"</div><div class=3D"sbl=
+k-brief">Evidencia externa, no autopublicidad. Credencial de terreno.</div>=
+</div>
+        <div class=3D"sblk-chev" id=3D"sc-s4">=E2=96=BE</div>
+      </div><div class=3D"sblk-body" id=3D"sb-s4"><div class=3D"sblk-inner"=
+>
+        <div class=3D"subs">
+          <div class=3D"sub"><div class=3D"sub-dot"></div><div class=3D"sub=
+-txt"><strong>El ecosistema que ya tienen.</strong> Si tu empresa est=C3=A1=
+ en Microsoft =E2=80=94 y el 90% del mid-market espa=C3=B1ol lo est=C3=A1 =
+=E2=80=94 Avanade activa lo que ya pagas y conoces. Sin a=C3=B1adir capas n=
+uevas.</div></div>
+          <div class=3D"sub"><div class=3D"sub-dot"></div><div class=3D"sub=
+-txt"><strong>Reconocimiento independiente.</strong> IDC MarketScape nombr=
+=C3=B3 a Avanade l=C3=ADder en Worldwide Cybersecurity Consulting Services =
+2024, validado por 901 organizaciones globales.</div></div>
+          <div class=3D"sub"><div class=3D"sub-dot"></div><div class=3D"sub=
+-txt"><strong>Operamos, no solo consultamos.</strong> La diferencia entre e=
+l informe que te deja con preguntas y el partner que est=C3=A1 ah=C3=AD el =
+d=C3=ADa que llega el incidente.</div></div>
+        </div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas =E2=80=94 caso de=
+ cliente</label><textarea placeholder=3D"=C2=BFHay un caso de cliente (anon=
+imizado) que refuerce esto con evidencia concreta? =C2=BFQu=C3=A9 m=C3=A9tr=
+ica o resultado es m=C3=A1s potente para este segmento?"></textarea></div>
+      </div></div></div>
+
+      <!-- B5 -->
+      <div class=3D"sblk s5"><div class=3D"sblk-hdr">
+        <div class=3D"sblk-time">B5</div>
+        <div class=3D"sblk-meta"><div class=3D"sblk-lbl">Cierre + CTA =C2=
+=B7 3 min</div><div class=3D"sblk-title">Una imagen de futuro y una acci=C3=
+=B3n concreta</div><div class=3D"sblk-brief">El oyente sale con direcci=C3=
+=B3n, no solo con informaci=C3=B3n.</div></div>
+        <div class=3D"sblk-chev" id=3D"sc-s5">=E2=96=BE</div>
+      </div><div class=3D"sblk-body" id=3D"sb-s5"><div class=3D"sblk-inner"=
+>
+        <div class=3D"sblk-narr">"Las organizaciones que construyan ahora u=
+nas operaciones de seguridad preparadas para la IA no van a tener que rehac=
+er todo dentro de dos a=C3=B1os. <strong>El que se quede quieto esperando a=
+ que 'madure la tecnolog=C3=ADa' va a llegar tarde, con m=C3=A1s deuda t=C3=
+=A9cnica y m=C3=A1s exposici=C3=B3n acumulada.</strong><br><br>No hace falt=
+a estar en el estadio m=C3=A1s avanzado para empezar. Hace falta saber d=C3=
+=B3nde est=C3=A1s."</div>
+        <div class=3D"alert-box info"><span>=E2=86=92</span><div>El CTA exa=
+cto se decide en la secci=C3=B3n C de este documento. La diapositiva de cie=
+rre =E2=80=94 con el canal de contacto visible =E2=80=94 debe estar lista a=
+ntes de grabar.</div></div>
+        <div class=3D"fld"><label class=3D"fld-lbl">Notas =E2=80=94 cierre<=
+/label><textarea placeholder=3D"=C2=BFHay un pr=C3=B3ximo evento de Avanade=
+ que refuerce el CTA? =C2=BFAlgo concreto que ofrecer en el cierre (assessm=
+ent, gu=C3=ADa, demo)?"></textarea></div>
+      </div></div></div>
+
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class=3D"divider"><div class=3D"div-line"></div><span class=3D"div-t=
+xt">Resumen</span><div class=3D"div-line"></div></div>
+  <div style=3D"background:var(--surface);border:2px solid var(--border);bo=
+rder-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.05)">
+    <div style=3D"font-family:'Syne',sans-serif;font-size:14px;font-weight:=
+800;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;ga=
+p:8px"><span style=3D"display:block;width:4px;height:18px;background:var(--=
+amber);border-radius:2px"></span>Decisiones pendientes</div>
+    <div style=3D"display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style=3D"padding:10px 12px;border-radius:8px;border:1.5px solid =
+var(--amber-bdr);background:var(--amber-bg)">
+        <div style=3D"font-family:'IBM Plex Mono',monospace;font-size:9px;f=
+ont-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amb=
+er);margin-bottom:6px">Por confirmar</div>
+        <div style=3D"font-size:12px;color:var(--text);line-height:1.8"><sp=
+an id=3D"sum-c1" style=3D"display:block">=E2=97=8B A =C2=B7 T=C3=ADtulo del=
+ webinar</span><span id=3D"sum-c2" style=3D"display:block">=E2=97=8B B =C2=
+=B7 An=C3=A9cdotas de los ponentes</span><span id=3D"sum-c3" style=3D"displ=
+ay:block">=E2=97=8B C =C2=B7 Call to action y canal</span><span id=3D"sum-c=
+4" style=3D"display:block">=E2=97=8B D =C2=B7 Reparto entre ponentes</span>=
+</div>
+      </div>
+      <div style=3D"padding:10px 12px;border-radius:8px;border:1.5px solid =
+var(--green-bdr);background:var(--green-bg)">
+        <div style=3D"font-family:'IBM Plex Mono',monospace;font-size:9px;f=
+ont-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gre=
+en);margin-bottom:6px">Ya confirmado</div>
+        <div style=3D"font-size:12px;color:var(--text);line-height:1.8">
+          =E2=9C=93 Estructura 70/30<br>=E2=9C=93 Audiencia mid-market =C2=
+=B7 centro SOC peque=C3=B1o<br>=E2=9C=93 Dos perfiles de oyente<br>=E2=9C=
+=93 Tres problemas del gui=C3=B3n<br>=E2=9C=93 Mensaje bisagra ("amplifica,=
+ no crea")<br>=E2=9C=93 Duraci=C3=B3n 28=E2=80=9330 min =C2=B7 2 ponentes +=
+ moderador
+        </div>
+      </div>
+    </div>
+    <div style=3D"display:flex;gap:8px;margin-top:14px">
+      <button class=3D"btn-exp">=E2=8E=99 Imprimir</button>
+      <button class=3D"btn-exp">=E2=86=93 Exportar notas</button>
+    </div>
+  </div>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class=3D"sidebar">
+  <div class=3D"sb-sec">
+    <div class=3D"sb-title">Confirmado</div>
+    <div class=3D"sb-conf">
+      <div class=3D"sb-conf-item">Estructura 70% IA Security =C2=B7 30% SOC=
+</div>
+      <div class=3D"sb-conf-item">Audiencia: mid-market =C2=B7 centro SOC p=
+eque=C3=B1o</div>
+      <div class=3D"sb-conf-item">CISO preocupado + directivo no consciente=
+</div>
+      <div class=3D"sb-conf-item">3 problemas: visibilidad =C2=B7 gobierno =
+=C2=B7 SOC</div>
+      <div class=3D"sb-conf-item">"La IA amplifica, no crea"</div>
+      <div class=3D"sb-conf-item">No hablar de "ataques con IA"</div>
+      <div class=3D"sb-conf-item">2 ponentes + moderador externo</div>
+    </div>
+  </div>
+  <div class=3D"sb-sec">
+    <div class=3D"sb-title">Por decidir</div>
+    <div class=3D"sb-open">
+      <div class=3D"sb-open-item"><span class=3D"sb-open-key">A =C2=B7 T=C3=
+=ADtulo</span><span class=3D"sb-open-val pend" id=3D"sb1">pendiente</span><=
+/div>
+      <div class=3D"sb-open-item"><span class=3D"sb-open-key">B =C2=B7 An=
+=C3=A9cdotas</span><span class=3D"sb-open-val pend" id=3D"sb2">pendiente</s=
+pan></div>
+      <div class=3D"sb-open-item"><span class=3D"sb-open-key">C =C2=B7 CTA<=
+/span><span class=3D"sb-open-val pend" id=3D"sb3">pendiente</span></div>
+      <div class=3D"sb-open-item"><span class=3D"sb-open-key">D =C2=B7 Repa=
+rto</span><span class=3D"sb-open-val pend" id=3D"sb4">pendiente</span></div=
+>
+    </div>
+  </div>
+  <div class=3D"sb-sec">
+    <div class=3D"sb-title">Gui=C3=B3n =C2=B7 estructura</div>
+    <div style=3D"display:flex;flex-direction:column;gap:4px">
+      <div style=3D"display:flex;gap:7px;align-items:center;font-size:11px"=
+><div style=3D"width:8px;height:8px;background:#374151;border-radius:2px;fl=
+ex-shrink:0"></div>B0 =C2=B7 Apertura =C2=B7 2 min</div>
+      <div style=3D"display:flex;gap:7px;align-items:center;font-size:11px"=
+><div style=3D"width:8px;height:8px;background:#b91c1c;border-radius:2px;fl=
+ex-shrink:0"></div>B1 =C2=B7 3 problemas =C2=B7 8=E2=80=9310 min</div>
+      <div style=3D"display:flex;gap:7px;align-items:center;font-size:11px"=
+><div style=3D"width:8px;height:8px;background:#b45309;border-radius:2px;fl=
+ex-shrink:0"></div>B2 =C2=B7 Bisagra =C2=B7 3 min</div>
+      <div style=3D"display:flex;gap:7px;align-items:center;font-size:11px"=
+><div style=3D"width:8px;height:8px;background:#1d4ed8;border-radius:2px;fl=
+ex-shrink:0"></div>B3 =C2=B7 Soluci=C3=B3n Avanade =C2=B7 8=E2=80=9310 min<=
+/div>
+      <div style=3D"display:flex;gap:7px;align-items:center;font-size:11px"=
+><div style=3D"width:8px;height:8px;background:#1e3a5f;border-radius:2px;fl=
+ex-shrink:0"></div>B4 =C2=B7 Por qu=C3=A9 Avanade =C2=B7 3=E2=80=934 min</d=
+iv>
+      <div style=3D"display:flex;gap:7px;align-items:center;font-size:11px"=
+><div style=3D"width:8px;height:8px;background:#065f46;border-radius:2px;fl=
+ex-shrink:0"></div>B5 =C2=B7 Cierre + CTA =C2=B7 3 min</div>
+      <div style=3D"font-family:'IBM Plex Mono',monospace;font-size:10px;co=
+lor:var(--green);margin-top:6px;font-weight:500">Total: 28=E2=80=9332 min</=
+div>
+    </div>
+  </div>
+</aside>
+</div>
+
+
+
+
+</body></html>
+------MultipartBoundary--p26hnzRWL0QZit1tUyOT5R1dcIpDnZ31SycZYQqyle----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@700;800&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2") format("woff2"); unicode-rang=
+e: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1isq129k.woff2") format("woff2"); unicode-rang=
+e: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1iAq129k.woff2") format("woff2"); unicode-rang=
+e: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-=
+301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1iEq129k.woff2") format("woff2"); unicode-rang=
+e: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+3=
+29, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0=
+, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2") format("woff2"); unicode-range:=
+ U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+=
+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U=
++FFFD; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgtIU.woff2") format("woff2"); unicode-=
+range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2=
+F; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgtIU.woff2") format("woff2"); unicode-=
+range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgtIU.woff2") format("woff2"); unicode-=
+range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+=
+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgtIU.woff2") format("woff2"); unicode-=
+range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308,=
+ U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-=
+20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight:=
+ 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ibmplexmono=
+/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2") format("woff2"); unicode-ra=
+nge: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308=
+, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEF=
+F, U+FFFD; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V=
+78x9OWIhrFQ5g3voKW6g.woff2") format("woff2"); unicode-range: U+460-52F, U+1=
+C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V=
+78x9OWIhrFQ5g-voKW6g.woff2") format("woff2"); unicode-range: U+301, U+400-4=
+5F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V=
+78x9OWIhrFQ5g5voKW6g.woff2") format("woff2"); unicode-range: U+370-377, U+3=
+7A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V=
+78x9OWIhrFQ5g1voKW6g.woff2") format("woff2"); unicode-range: U+102-103, U+1=
+10-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U=
++308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V=
+78x9OWIhrFQ5g0voKW6g.woff2") format("woff2"); unicode-range: U+100-2BA, U+2=
+BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, =
+U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-=
+2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: italic; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXEKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbM4jw8V=
+78x9OWIhrFQ5g6voI.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+=
+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, =
+U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbABA=
+.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+=
+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbABA=
+.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0=
+-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbABA=
+.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U=
++38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbABA=
+.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U=
++168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+3=
+29, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbABA=
+.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U=
++2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-=
+1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 300; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.wo=
+ff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, =
+U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+21=
+91, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbABA=
+.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+=
+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbABA=
+.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0=
+-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbABA=
+.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U=
++38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbABA=
+.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U=
++168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+3=
+29, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbABA=
+.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U=
++2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-=
+1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 400; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.wo=
+ff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, =
+U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+21=
+91, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 500; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbABA=
+.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+=
+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 500; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbABA=
+.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0=
+-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 500; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbABA=
+.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U=
++38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 500; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbABA=
+.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U=
++168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+3=
+29, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 500; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbABA=
+.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U=
++2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-=
+1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 500; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.wo=
+ff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, =
+U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+21=
+91, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbABA=
+.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+=
+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbABA=
+.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0=
+-4B1, U+2116; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbABA=
+.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384-38A, U=
++38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbABA=
+.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U=
++168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+3=
+29, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbABA=
+.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U=
++2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-=
+1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight:=
+ 600; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstat=
+ic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.wo=
+ff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, =
+U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+21=
+91, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Syne; font-style: normal; font-weight: 700; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
+2NL9Hz_.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384=
+-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Syne; font-style: normal; font-weight: 700; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
+25L9Hz_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7=
+-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, =
+U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-=
+A7FF; }
+
+@font-face { font-family: Syne; font-style: normal; font-weight: 700; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
+2BL9A.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
+BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+21=
+22, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Syne; font-style: normal; font-weight: 800; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
+2NL9Hz_.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384=
+-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Syne; font-style: normal; font-weight: 800; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
+25L9Hz_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7=
+-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, =
+U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-=
+A7FF; }
+
+@font-face { font-family: Syne; font-style: normal; font-weight: 800; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
+2BL9A.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
+BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+21=
+22, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--p26hnzRWL0QZit1tUyOT5R1dcIpDnZ31SycZYQqyle----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-6dcf387a-7d7f-4cc5-8d40-6122dc0a9c0c@mhtml.blink
+
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=3DIBM+Plex+Sans:ital,=
+wght@0,300;0,400;0,500;0,600;1,300&family=3DIBM+Plex+Mono:wght@400;500&fami=
+ly=3DSyne:wght@700;800&display=3Dswap");
+
+:root { --bg: #f4f3ef; --surface: #fff; --s2: #f8f7f4; --border: #e2e0d8; -=
+-border2: #ccc9be; --text: #1a1916; --muted: #7a7669; --amber: #d97706; --a=
+mber-bg: #fef3c7; --amber-bdr: #fcd34d; --navy: #1e3a5f; --navy-bg: #eff6ff=
+; --navy-bdr: #bfdbfe; --green: #059669; --green-bg: #ecfdf5; --green-bdr: =
+#a7f3d0; --red: #dc2626; --red-bg: #fef2f2; --red-bdr: #fecaca; --purple: #=
+7c3aed; --purple-bg: #f5f3ff; --purple-bdr: #ddd6fe; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { font-size: 14px; scroll-behavior: smooth; }
+
+body { background: var(--bg); color: var(--text); font-family: "IBM Plex Sa=
+ns", sans-serif; font-weight: 300; line-height: 1.6; min-height: 100vh; }
+
+.hdr { position: sticky; top: 0px; z-index: 100; background: rgba(255, 255,=
+ 255, 0.96); backdrop-filter: blur(12px); border-bottom: 2px solid var(--bo=
+rder); padding: 10px 22px; display: flex; align-items: center; justify-cont=
+ent: space-between; gap: 16px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 8px;=
+ }
+
+.hdr-logo { font-family: Syne, sans-serif; font-size: 17px; font-weight: 80=
+0; color: var(--navy); }
+
+.hdr-logo span { color: var(--amber); }
+
+.hdr-sep { width: 1px; height: 28px; background: var(--border); }
+
+.hdr-title { font-size: 13px; font-weight: 600; color: var(--text); }
+
+.hdr-sub { font-family: "IBM Plex Mono", monospace; font-size: 10px; color:=
+ var(--muted); letter-spacing: 0.03em; }
+
+.prog-wrap { display: flex; align-items: center; gap: 8px; }
+
+.prog-lbl { font-family: "IBM Plex Mono", monospace; font-size: 10px; color=
+: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+
+.prog-outer { width: 120px; height: 5px; background: var(--border); border-=
+radius: 10px; overflow: hidden; }
+
+.prog-inner { height: 100%; background: linear-gradient(90deg,var(--amber),=
+#f59e0b); border-radius: 10px; width: 0%; transition: width 0.5s; }
+
+.prog-count { font-family: "IBM Plex Mono", monospace; font-size: 12px; fon=
+t-weight: 500; color: var(--amber); background: var(--amber-bg); border: 1p=
+x solid var(--amber-bdr); padding: 2px 8px; border-radius: 20px; }
+
+.layout { display: grid; grid-template-columns: 1fr 270px; min-height: calc=
+(-53px + 100vh); }
+
+.main { padding: 22px 22px 80px; max-width: 800px; }
+
+.sec-nav { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 20px; p=
+adding: 9px 11px; background: var(--surface); border: 1px solid var(--borde=
+r); border-radius: 10px; }
+
+.pill { font-family: "IBM Plex Mono", monospace; font-size: 10px; font-weig=
+ht: 500; letter-spacing: 0.05em; cursor: pointer; padding: 5px 11px; border=
+-radius: 6px; border: 1.5px solid var(--border2); color: var(--muted); back=
+ground: var(--s2); transition: 0.18s; white-space: nowrap; }
+
+.pill:hover { border-color: var(--amber); color: var(--amber); background: =
+var(--amber-bg); }
+
+.pill.done { border-color: var(--green-bdr); color: var(--green); backgroun=
+d: var(--green-bg); }
+
+.pill.active { border-color: var(--amber); color: var(--amber); background:=
+ var(--amber-bg); }
+
+.confirmed-strip { background: var(--navy); border-radius: 12px; padding: 1=
+8px 20px; margin-bottom: 20px; }
+
+.cs-label { font-family: "IBM Plex Mono", monospace; font-size: 9px; font-w=
+eight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(=
+255, 255, 255, 0.4); margin-bottom: 12px; }
+
+.cs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+.cs-item { display: flex; gap: 8px; align-items: flex-start; }
+
+.cs-check { color: rgb(52, 211, 153); font-size: 12px; flex-shrink: 0; marg=
+in-top: 1px; }
+
+.cs-text { font-size: 12px; color: rgba(255, 255, 255, 0.85); line-height: =
+1.5; }
+
+.cs-text strong { color: rgb(251, 191, 36); font-weight: 500; }
+
+.card { background: var(--surface); border: 1.5px solid var(--border); bord=
+er-radius: 12px; margin-bottom: 12px; overflow: hidden; transition: border-=
+color 0.2s, box-shadow 0.2s; box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 4px; }
+
+.card:hover { box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 12px; }
+
+.card.resolved { border-color: var(--green-bdr); }
+
+.card-hdr { padding: 14px 17px; display: flex; align-items: flex-start; gap=
+: 10px; cursor: pointer; user-select: none; transition: background 0.15s; }
+
+.card-hdr:hover { background: var(--s2); }
+
+.badge { font-family: "IBM Plex Mono", monospace; font-size: 11px; font-wei=
+ght: 500; padding: 3px 8px; border-radius: 5px; flex-shrink: 0; margin-top:=
+ 2px; border: 1.5px solid var(--amber-bdr); color: var(--amber); background=
+: var(--amber-bg); }
+
+.badge.done { border-color: var(--green-bdr); color: var(--green); backgrou=
+nd: var(--green-bg); }
+
+.card-meta { flex: 1 1 0%; min-width: 0px; }
+
+.imp { font-family: "IBM Plex Mono", monospace; font-size: 9px; font-weight=
+: 500; letter-spacing: 0.07em; text-transform: uppercase; padding: 2px 7px;=
+ border-radius: 4px; display: inline-block; margin-bottom: 4px; }
+
+.imp-h { color: var(--amber); background: var(--amber-bg); border: 1px soli=
+d var(--amber-bdr); }
+
+.imp-m { color: var(--purple); background: var(--purple-bg); border: 1px so=
+lid var(--purple-bdr); }
+
+.card-title { font-family: Syne, sans-serif; font-size: 14px; font-weight: =
+700; color: var(--text); line-height: 1.3; margin-bottom: 3px; }
+
+.card-why { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+.chev { font-size: 14px; color: var(--muted); flex-shrink: 0; margin-top: 4=
+px; transition: transform 0.22s; }
+
+.card-body { overflow: hidden; max-height: 0px; transition: max-height 0.35=
+s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.card-body.open { max-height: 2000px; }
+
+.card-inner { padding: 0px 17px 17px; border-top: 1px solid var(--border); =
+}
+
+.opts { display: flex; flex-direction: column; gap: 7px; margin: 12px 0px; =
+}
+
+.opt { border: 2px solid var(--border); border-radius: 9px; padding: 12px 1=
+4px 12px 38px; cursor: pointer; transition: 0.18s; position: relative; back=
+ground: var(--s2); }
+
+.opt:hover { border-color: var(--amber); background: var(--amber-bg); }
+
+.opt.sel { border-color: var(--amber); background: linear-gradient(135deg,v=
+ar(--amber-bg),#fffbf0); box-shadow: rgba(217, 119, 6, 0.1) 0px 0px 0px 3px=
+; }
+
+.opt-radio { position: absolute; left: 12px; top: 50%; transform: translate=
+Y(-50%); width: 19px; height: 19px; border-radius: 50%; border: 2px solid v=
+ar(--border2); background: var(--surface); display: flex; align-items: cent=
+er; justify-content: center; transition: 0.18s; }
+
+.opt.sel .opt-radio { border-color: var(--amber); background: var(--amber);=
+ }
+
+.opt.sel .opt-radio::after { content: ""; width: 7px; height: 7px; border-r=
+adius: 50%; background: white; }
+
+.opt-lbl { font-family: "IBM Plex Mono", monospace; font-size: 9px; font-we=
+ight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--=
+muted); margin-bottom: 3px; }
+
+.opt.sel .opt-lbl { color: var(--amber); }
+
+.opt-title { font-size: 13px; font-weight: 600; color: var(--text); margin-=
+bottom: 3px; line-height: 1.3; }
+
+.opt-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+.opt-risk { margin-top: 6px; padding: 5px 9px; background: var(--red-bg); b=
+order: 1px solid var(--red-bdr); border-radius: 5px; font-size: 11px; color=
+: var(--red); line-height: 1.4; display: flex; gap: 5px; }
+
+.opt-risk::before { content: "=E2=9A=A1"; flex-shrink: 0; }
+
+.chklist { display: flex; flex-direction: column; gap: 6px; margin: 11px 0p=
+x; }
+
+.chk { display: flex; align-items: flex-start; gap: 8px; padding: 9px 11px;=
+ border-radius: 7px; background: var(--s2); border: 1.5px solid var(--borde=
+r); cursor: pointer; transition: 0.18s; }
+
+.chk:hover { border-color: var(--amber); }
+
+.chk.ticked { border-color: var(--green-bdr); background: var(--green-bg); =
+}
+
+.chk-box { width: 17px; height: 17px; border-radius: 4px; flex-shrink: 0; m=
+argin-top: 2px; border: 2px solid var(--border2); background: white; displa=
+y: flex; align-items: center; justify-content: center; font-size: 11px; fon=
+t-weight: 700; color: transparent; transition: 0.15s; }
+
+.chk.ticked .chk-box { background: var(--green); border-color: var(--green)=
+; color: white; }
+
+.chk-txt { font-size: 12px; color: var(--text); line-height: 1.5; flex: 1 1=
+ 0%; }
+
+.chk.ticked .chk-txt { color: var(--muted); text-decoration: line-through; =
+}
+
+.chk.ticked .chk-txt strong { color: var(--green); text-decoration: none; }
+
+.fld { margin: 9px 0px; }
+
+.fld-lbl { display: block; font-family: "IBM Plex Mono", monospace; font-si=
+ze: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercas=
+e; color: var(--muted); margin-bottom: 5px; }
+
+textarea { width: 100%; min-height: 72px; resize: vertical; background: var=
+(--surface); border: 1.5px solid var(--border); border-radius: 7px; color: =
+var(--text); font-family: "IBM Plex Sans", sans-serif; font-size: 13px; fon=
+t-weight: 300; line-height: 1.6; padding: 9px 12px; outline: none; transiti=
+on: border-color 0.18s; }
+
+textarea:focus { border-color: var(--amber); box-shadow: rgba(217, 119, 6, =
+0.1) 0px 0px 0px 3px; }
+
+textarea::placeholder { color: var(--border2); }
+
+.btn-row { display: flex; gap: 8px; margin-top: 13px; }
+
+.btn-resolve { display: inline-flex; align-items: center; gap: 6px; font-fa=
+mily: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 500; letter=
+-spacing: 0.04em; padding: 8px 15px; border-radius: 7px; cursor: pointer; b=
+order: 2px solid var(--navy); color: var(--navy); background: white; transi=
+tion: 0.18s; }
+
+.btn-resolve:hover { background: var(--navy); color: white; }
+
+.btn-resolve.done { border-color: var(--green); color: var(--green); backgr=
+ound: var(--green-bg); }
+
+.btn-resolve.done:hover { background: var(--green); color: white; }
+
+.btn-exp { display: inline-flex; align-items: center; gap: 5px; font-family=
+: "IBM Plex Mono", monospace; font-size: 10px; font-weight: 500; padding: 7=
+px 12px; border-radius: 6px; cursor: pointer; border: 1.5px solid var(--bor=
+der2); color: var(--muted); background: var(--s2); transition: 0.18s; }
+
+.btn-exp:hover { border-color: var(--navy); color: var(--navy); background:=
+ var(--navy-bg); }
+
+.divider { display: flex; align-items: center; gap: 12px; margin: 22px 0px =
+14px; }
+
+.div-line { flex: 1 1 0%; height: 1px; background: var(--border); }
+
+.div-txt { font-family: "IBM Plex Mono", monospace; font-size: 9px; font-we=
+ight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--=
+muted); white-space: nowrap; }
+
+.story-hdr { background: linear-gradient(135deg, rgb(30, 58, 95), rgb(45, 7=
+9, 124)); border-radius: 12px 12px 0px 0px; padding: 15px 19px; display: fl=
+ex; align-items: center; justify-content: space-between; }
+
+.story-hdr-title { font-family: Syne, sans-serif; font-size: 14px; font-wei=
+ght: 800; color: white; }
+
+.story-hdr-sub { font-size: 12px; color: rgba(255, 255, 255, 0.55); margin-=
+top: 2px; }
+
+.story-dur { font-family: "IBM Plex Mono", monospace; font-size: 10px; font=
+-weight: 500; color: rgb(251, 191, 36); background: rgba(251, 191, 36, 0.14=
+); border: 1px solid rgba(251, 191, 36, 0.28); padding: 4px 10px; border-ra=
+dius: 20px; white-space: nowrap; }
+
+.story-flow { background: var(--surface); border-right-color: ; border-righ=
+t-style: ; border-right-width: ; border-bottom-color: ; border-bottom-style=
+: ; border-bottom-width: ; border-left-color: ; border-left-style: ; border=
+-left-width: ; border-image-source: ; border-image-slice: ; border-image-wi=
+dth: ; border-image-outset: ; border-image-repeat: ; border-top-width: medi=
+um; border-top-style: none; border-top-color: currentcolor; border-radius: =
+0px 0px 12px 12px; overflow: hidden; }
+
+.sblk { border-bottom: 1.5px solid var(--border); }
+
+.sblk:last-child { border-bottom-width: medium; border-bottom-style: none; =
+border-bottom-color: currentcolor; }
+
+.sblk-hdr { display: flex; align-items: stretch; cursor: pointer; transitio=
+n: background 0.15s; }
+
+.sblk-hdr:hover { background: var(--s2); }
+
+.sblk-time { font-family: "IBM Plex Mono", monospace; font-size: 10px; font=
+-weight: 500; color: white; writing-mode: vertical-rl; padding: 12px 8px; m=
+in-width: 32px; display: flex; align-items: center; justify-content: center=
+; flex-shrink: 0; letter-spacing: 0.05em; }
+
+.sblk-meta { flex: 1 1 0%; padding: 12px 14px; }
+
+.sblk-lbl { font-family: "IBM Plex Mono", monospace; font-size: 9px; font-w=
+eight: 500; letter-spacing: 0.09em; text-transform: uppercase; margin-botto=
+m: 3px; }
+
+.sblk-title { font-family: Syne, sans-serif; font-size: 13px; font-weight: =
+700; color: var(--text); line-height: 1.3; }
+
+.sblk-brief { font-size: 11px; color: var(--muted); margin-top: 2px; line-h=
+eight: 1.4; }
+
+.sblk-chev { padding: 12px; color: var(--muted); font-size: 13px; display: =
+flex; align-items: center; transition: transform 0.22s; }
+
+.sblk-body { overflow: hidden; max-height: 0px; transition: max-height 0.35=
+s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.sblk-body.open { max-height: 1600px; }
+
+.sblk-inner { padding: 14px 16px 16px; border-top: 1px solid var(--border);=
+ }
+
+.sblk-narr { font-size: 13px; color: var(--text); line-height: 1.7; backgro=
+und: var(--s2); border-left: 3px solid; border-radius: 0px 7px 7px 0px; pad=
+ding: 11px 13px; margin-bottom: 10px; }
+
+.sblk-narr em { color: var(--amber); font-style: normal; font-weight: 500; =
+}
+
+.snlbl { display: block; font-family: "IBM Plex Mono", monospace; font-size=
+: 9px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase;=
+ color: var(--muted); margin: 10px 0px 5px; }
+
+.subs { display: flex; flex-direction: column; gap: 5px; margin: 8px 0px; }
+
+.sub { display: flex; gap: 8px; padding: 7px 10px; border-radius: 6px; back=
+ground: var(--s2); border: 1px solid var(--border); align-items: flex-start=
+; }
+
+.sub-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; mar=
+gin-top: 7px; }
+
+.sub-txt { font-size: 12px; color: var(--text); line-height: 1.5; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin:=
+ 8px 0px; }
+
+.two-col-item { padding: 10px 12px; border-radius: 7px; border: 1.5px solid=
+ var(--border); background: var(--s2); }
+
+.two-col-label { font-family: "IBM Plex Mono", monospace; font-size: 9px; f=
+ont-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-=
+bottom: 5px; }
+
+.two-col-text { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+.alert-box { padding: 9px 12px; border-radius: 6px; margin: 8px 0px; font-s=
+ize: 12px; line-height: 1.5; display: flex; gap: 7px; align-items: flex-sta=
+rt; }
+
+.alert-box.warn { background: var(--red-bg); border: 1px solid var(--red-bd=
+r); color: var(--red); }
+
+.alert-box.info { background: var(--amber-bg); border: 1px solid var(--ambe=
+r-bdr); color: rgb(146, 64, 14); }
+
+.alert-box.tip { background: var(--green-bg); border: 1px solid var(--green=
+-bdr); color: rgb(6, 95, 70); }
+
+.s0 .sblk-time { background: rgb(55, 65, 81); }
+
+.s0 .sblk-lbl { color: rgb(156, 163, 175); }
+
+.s0 .sblk-narr { border-color: rgb(156, 163, 175); }
+
+.s0 .sub-dot { background: rgb(156, 163, 175); }
+
+.s1 .sblk-time { background: rgb(185, 28, 28); }
+
+.s1 .sblk-lbl { color: var(--red); }
+
+.s1 .sblk-narr { border-color: var(--red); }
+
+.s1 .sub-dot { background: var(--red); }
+
+.s2 .sblk-time { background: rgb(180, 83, 9); }
+
+.s2 .sblk-lbl { color: var(--amber); }
+
+.s2 .sblk-narr { border-color: var(--amber); }
+
+.s2 .sub-dot { background: var(--amber); }
+
+.s3 .sblk-time { background: rgb(29, 78, 216); }
+
+.s3 .sblk-lbl { color: rgb(59, 130, 246); }
+
+.s3 .sblk-narr { border-color: rgb(59, 130, 246); }
+
+.s3 .sub-dot { background: rgb(59, 130, 246); }
+
+.s4 .sblk-time { background: var(--navy); }
+
+.s4 .sblk-lbl { color: var(--navy); }
+
+.s4 .sblk-narr { border-color: var(--navy); }
+
+.s4 .sub-dot { background: var(--navy); }
+
+.s5 .sblk-time { background: rgb(6, 95, 70); }
+
+.s5 .sblk-lbl { color: var(--green); }
+
+.s5 .sblk-narr { border-color: var(--green); }
+
+.s5 .sub-dot { background: var(--green); }
+
+.sidebar { border-left: 1.5px solid var(--border); background: var(--surfac=
+e); padding: 18px 15px; position: sticky; top: 53px; height: calc(-53px + 1=
+00vh); overflow-y: auto; }
+
+.sidebar::-webkit-scrollbar { width: 4px; }
+
+.sidebar::-webkit-scrollbar-thumb { background: var(--border2); border-radi=
+us: 2px; }
+
+.sb-sec { margin-bottom: 20px; }
+
+.sb-title { font-family: "IBM Plex Mono", monospace; font-size: 9px; font-w=
+eight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(-=
+-muted); padding-bottom: 7px; margin-bottom: 9px; border-bottom: 1.5px soli=
+d var(--border); }
+
+.sb-conf { display: flex; flex-direction: column; gap: 5px; }
+
+.sb-conf-item { display: flex; gap: 7px; align-items: flex-start; font-size=
+: 11px; color: var(--text); line-height: 1.4; padding: 5px 0px; border-bott=
+om: 1px dashed var(--border); }
+
+.sb-conf-item:last-child { border-bottom-width: medium; border-bottom-style=
+: none; border-bottom-color: currentcolor; }
+
+.sb-conf-item::before { content: "=E2=9C=93"; color: var(--green); font-siz=
+e: 11px; flex-shrink: 0; margin-top: 1px; }
+
+.sb-open { display: flex; flex-direction: column; gap: 5px; }
+
+.sb-open-item { display: flex; justify-content: space-between; align-items:=
+ center; padding: 6px 0px; border-bottom: 1px solid var(--border); gap: 8px=
+; }
+
+.sb-open-item:last-child { border-bottom-width: medium; border-bottom-style=
+: none; border-bottom-color: currentcolor; }
+
+.sb-open-key { font-size: 11px; color: var(--muted); }
+
+.sb-open-val { font-size: 11px; color: var(--text); text-align: right; max-=
+width: 120px; line-height: 1.3; }
+
+.sb-open-val.pend { color: var(--amber); font-style: italic; }
+
+.sb-open-val.done { color: var(--green); font-weight: 500; }
+
+.sb-next { display: flex; flex-direction: column; gap: 6px; }
+
+.sb-next-item { font-size: 11px; color: var(--text); padding: 8px 10px; bor=
+der-left: 3px solid var(--navy); background: var(--navy-bg); border-radius:=
+ 0px 6px 6px 0px; line-height: 1.5; }
+
+@media print {
+  .hdr { position: relative; }
+  .sidebar { position: relative; height: auto; }
+  .layout { grid-template-columns: 1fr 220px; }
+  .card-body, .sblk-body { max-height: 2000px !important; }
+  .btn-row, .btn-exp { display: none; }
+}
+------MultipartBoundary--p26hnzRWL0QZit1tUyOT5R1dcIpDnZ31SycZYQqyle------
