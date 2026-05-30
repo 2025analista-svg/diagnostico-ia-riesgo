@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAT Core — Flow Diagrams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ece3d2; --paper-2:#f4ecdc; --card:#f8f2e6; --card-2:#fbf6ec;
+    --ink:#221e18; --ink-soft:#4a4338; --muted:#6f6350; --line:#cebfa3; --line-soft:#ddd0b6;
+    --accent:#9c3d2e; --accent-deep:#73291d; --gold:#b07d2a; --teal:#2f5d57;
+    --shadow:0 1px 2px rgba(60,40,20,.08), 0 10px 30px -12px rgba(60,40,20,.18);
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:"Spectral",Georgia,serif; font-size:18px; line-height:1.6;
+    background-image:radial-gradient(circle at 15% -10%, rgba(176,125,42,.10), transparent 45%), radial-gradient(circle at 100% 0%, rgba(47,93,87,.08), transparent 40%); background-attachment:fixed}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 24px}
+  h1,h2,h3{font-family:"Fraunces",serif; line-height:1.12; font-weight:600}
+  .mono{font-family:"Spline Sans Mono",monospace}
+  header{padding:58px 0 28px; border-bottom:2px solid var(--ink)}
+  .kicker{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-size:clamp(36px,7vw,62px); margin:0; letter-spacing:-.02em}
+  h1 em{font-style:italic; color:var(--accent); font-weight:500}
+  .lede{font-size:20px; color:var(--ink-soft); max-width:62ch; font-weight:300; margin:18px 0 0}
+  section{padding:44px 0; border-bottom:1px solid var(--line-soft)}
+  .seclabel{font-family:"Spline Sans Mono",monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:12px; margin:0 0 8px}
+  .seclabel::before{content:""; width:28px; height:2px; background:var(--accent)}
+  h2{font-size:clamp(26px,4vw,38px); margin:0 0 14px}
+  p{max-width:68ch; color:var(--ink-soft)}
+
+  .legend{display:flex; flex-wrap:wrap; gap:10px 18px; margin:18px 0 6px; font-size:14px; font-family:"Spline Sans Mono",monospace}
+  .legend span{display:inline-flex; align-items:center; gap:7px; color:var(--ink-soft)}
+  .sw{width:16px; height:16px; border-radius:4px; border:1px solid var(--line)}
+  .sw.step{background:var(--card)} .sw.gate{background:#f6e7e2; border-color:#d8a899}
+  .sw.wait{background:#f6ecd2; border-color:#d8b96a}
+
+  .flow{margin:20px 0 0; display:flex; flex-direction:column}
+  .zone-label{font-family:"Spline Sans Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:20px 0 10px; display:flex; align-items:center; gap:10px}
+  .zone-label::after{content:""; flex:1; height:1px; background:var(--line-soft)}
+  .node{display:grid; grid-template-columns:56px 1fr; gap:14px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 16px; box-shadow:var(--shadow)}
+  .node .code{font-family:"Spline Sans Mono",monospace; font-size:12.5px; font-weight:600; color:var(--ink); text-align:center; background:var(--paper-2); border-radius:7px; padding:5px 3px}
+  .node .nname{font-family:"Fraunces",serif; font-size:17.5px; font-weight:600; margin:0}
+  .node .ng{font-size:14px; color:var(--ink-soft); display:block; margin-top:1px}
+  .node.gate{background:#f8eae4; border-color:#d8a899}
+  .node.gate .code{background:#efd6cd; color:var(--accent-deep)}
+  .node.wait{background:#f9f0d8; border-color:#d8b96a}
+  .node.wait .code{background:#eedfb4; color:#8a5a1a}
+  .node.crit{background:#eef1ea; border-color:#a9c4b1}
+  .node.crit .code{background:#d7e3d6; color:var(--teal)}
+  .node.opt{border-style:dashed; opacity:.92}
+  .node .badge{font-family:"Spline Sans Mono",monospace; font-size:9.5px; letter-spacing:.04em; text-transform:uppercase; border:1px solid var(--line); border-radius:999px; padding:2px 8px; color:var(--muted); white-space:nowrap}
+  .node .nname-row{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap}
+  .arrow{align-self:center; color:var(--accent); font-size:17px; line-height:1; margin:4px 0}
+  .wait-tag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:11px; color:#8a5a1a; background:#eedfb4; border-radius:6px; padding:2px 8px; margin-top:5px}
+  .crit-tag{display:inline-block; font-family:"Spline Sans Mono",monospace; font-size:11px; color:var(--teal); background:#d7e3d6; border-radius:6px; padding:2px 8px; margin-top:5px}
+
+  .fork{text-align:center; font-family:"Spline Sans Mono",monospace; font-size:13px; color:var(--accent); margin:14px 0 6px}
+  .pistas{display:grid; grid-template-columns:repeat(2,1fr); gap:14px}
+  @media(max-width:720px){.pistas{grid-template-columns:1fr}}
+  .pista{border:1px solid var(--line); border-top:4px solid var(--pc,var(--accent)); border-radius:11px; padding:14px 16px; background:var(--card)}
+  .pista h4{margin:0; font-size:18px; font-family:"Fraunces",serif}
+  .pista .cond{font-size:13px; color:var(--muted); font-style:italic; margin:2px 0 9px}
+  .pista .seq{font-family:"Spline Sans Mono",monospace; font-size:12.5px; color:var(--ink); line-height:1.7}
+
+  .modes{display:flex; flex-direction:column; gap:13px; margin-top:18px}
+  .moderow{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow)}
+  .mhead{display:flex; align-items:center; gap:10px; margin-bottom:4px; flex-wrap:wrap}
+  .mletter{font-family:"Fraunces",serif; font-weight:700; color:#fff; background:var(--accent); width:25px; height:25px; border-radius:7px; display:inline-flex; align-items:center; justify-content:center; font-size:13px}
+  .mname{font-family:"Fraunces",serif; font-size:18px; font-weight:600}
+  .mdesc{margin-left:auto; font-size:14px; color:var(--ink-soft); text-align:right; max-width:50ch}
+  .track{display:flex; gap:3px; margin-top:9px; align-items:stretch}
+  .cell{flex:1; height:15px; border-radius:3px; background:var(--line-soft)}
+  .cell.p{background:var(--gold)}
+  .cell.rev{flex:2.4; background:var(--gold); border-radius:3px}
+  .trackcap{font-family:"Spline Sans Mono",monospace; font-size:10.5px; color:var(--muted); margin-top:6px; display:flex; gap:16px; flex-wrap:wrap}
+  .trackcap span{display:inline-flex; align-items:center; gap:6px}
+  .ck{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+  .branch{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0}
+  @media(max-width:640px){.branch{grid-template-columns:1fr}}
+  .bopt{border:1px solid var(--line); border-radius:11px; padding:13px 15px; background:var(--card)}
+  .bopt.main{border-color:var(--accent); border-left-width:4px}
+  .bopt h4{margin:0 0 3px; font-size:16px; font-family:"Fraunces",serif}
+  .bopt .mono{font-size:12.5px; color:var(--muted)} .bopt p{font-size:14px; margin:4px 0 0}
+
+  .states{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0}
+  .st{font-family:"Spline Sans Mono",monospace; font-size:12px; border:1px solid var(--line); border-radius:7px; padding:5px 11px; background:var(--card); color:var(--ink-soft)}
+  .st.res{background:#f9f0d8; border-color:#d8b96a; color:#8a5a1a}
+  .scn{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:15px 18px; box-shadow:var(--shadow); margin-bottom:13px}
+  .scn h4{margin:0 0 2px; font-size:18px; font-family:"Fraunces",serif}
+  .scn .chain2{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:9px 0 7px; font-family:"Spline Sans Mono",monospace; font-size:12px}
+  .scn .pill{border:1px solid var(--line); border-radius:6px; padding:3px 9px; background:var(--paper-2); color:var(--ink)}
+  .scn .pill.hot{background:#f9f0d8; border-color:#d8b96a; color:#8a5a1a}
+  .scn .a{color:var(--accent); font-weight:700}
+  .scn p{margin:0; font-size:14.5px; color:var(--ink-soft)}
+
+  .callout{background:var(--card-2); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; padding:16px 20px; margin:22px 0 0}
+  .callout.teal{border-left-color:var(--teal)} .callout.accent{border-left-color:var(--accent)}
+  .callout h4{margin:0 0 5px; font-size:17px; font-family:"Fraunces",serif; color:var(--ink)}
+  .callout p{margin:0; font-size:15.5px; color:var(--ink-soft)}
+  .layers{display:flex; flex-direction:column; gap:12px; margin-top:16px}
+  .layer{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:15px 18px 13px 22px; box-shadow:var(--shadow); position:relative; overflow:hidden}
+  .layer::before{content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--lc,var(--teal))}
+  .layer .lh{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:4px}
+  .layer h4{margin:0; font-size:18px; font-family:"Fraunces",serif}
+  .layer .ltag{font-family:"Spline Sans Mono",monospace; font-size:10px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:2px 9px}
+  .layer p{margin:0; font-size:15px; color:var(--ink-soft); max-width:none}
+  .layer .span{display:flex; gap:3px; margin-top:9px}
+  .layer .span i{flex:1; height:4px; border-radius:2px; background:var(--lc,var(--teal)); opacity:.3}
+
+  footer{padding:40px 0 64px; color:var(--muted); font-size:13px; font-family:"Spline Sans Mono",monospace}
+  @media print{body{background:#fff} .node,.callout,.bopt,.pista,.moderow{box-shadow:none; break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <p class="kicker">SAT Core · flow diagrams</p>
+  <h1>How <em>an analysis</em> flows</h1>
+  <p class="lede">The system's full set of paths: the entry stretch, the four tracks it chooses from depending on the problem, the exit stretch with its two quality checks, the layers running beneath the whole flow, and how the pace changes with the working mode.</p>
+</div></header>
+
+<section><div class="wrap">
+  <p class="seclabel">How to read them</p>
+  <h2>Four kinds of step</h2>
+  <div class="legend">
+    <span><span class="sw step"></span> analytical step</span>
+    <span><span class="sw gate"></span> mandatory gate</span>
+    <span><span class="sw wait"></span> stops and waits for the person</span>
+    <span><span class="sw step" style="background:#eef1ea;border-color:#a9c4b1"></span> quality check</span>
+  </div>
+  <p style="font-size:14.5px; margin-top:12px"><b>The numbers</b> are each step's position in the orchestrator's sequence: <b>negative</b> ones (−1, −0.5…) happen <em>before</em> the analysis begins (the entry stretch); <b>positive</b> ones (1, 2 … 13), <em>during</em> it. Decimals (11.3, 11.5…) are steps inserted between the main ones. A dash (—) marks a real step with no sequence number of its own.</p>
+  <div class="callout teal"><h4>The idea that organizes everything</h4><p>There is no single pipeline. The flow has a <b>fixed entry stretch</b> (the gates, where the system hands control to the person), then <b>one of four tracks is chosen</b> based on the kind of problem —and that is the actual pipeline— and it ends with a <b>fixed exit stretch</b> holding the quality checks. The steps that may look "conditional" belong to a specific track: in any one session <b>one</b> track runs, not all of them.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="seclabel">Flow 1 · the master path</p>
+  <h2>Entry → track → exit</h2>
+
+  <div class="flow">
+    <p class="zone-label">Entry stretch · the system hands over control · same in every mode</p>
+    <div class="node gate"><div class="code">-1</div><div><span class="nname">SAT-Entry</span><span class="ng">Classifies the message: chat / analysis request / non-analytical request. Only an analysis request opens the pipeline.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node"><div class="code">-0.5</div><div><span class="nname">SESSION-INIT</span><span class="ng">Emits the visible session panel. If it doesn't appear, something failed before starting.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node wait"><div class="code">-0.3</div><div><div class="nname-row"><span class="nname">Triple-Minimum Gate</span><span class="badge">elicit, never infer</span></div><span class="ng">Receiver + decision + horizon. Always asked for. Without them, the router won't start.</span><span class="wait-tag">⏸ the person's turn</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node wait"><div class="code">-0.2</div><div><div class="nname-row"><span class="nname">Mode Gate</span><span class="badge">no override</span></div><span class="ng">The working mode is the person's choice. Neither urgency nor rich context is an exception. Gate open = pipeline blocked.</span><span class="wait-tag">⏸ the person's turn</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node wait"><div class="code">1</div><div><div class="nname-row"><span class="nname">SkillRouter</span></div><span class="ng">Detects the kind of problem and proposes the plan in plain language. Won't start without a go-ahead.</span><span class="wait-tag">⏸ proposes and waits for confirmation</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node"><div class="code">2</div><div><div class="nname-row"><span class="nname">CYN</span><span class="badge">the domain router</span></div><span class="ng">Classifies the problem and, with that, <b>picks the track</b>. The flow branches here.</span></div></div>
+  </div>
+
+  <p class="fork">▼ &nbsp; ONE of these four is chosen &nbsp; ▼</p>
+  <div class="pistas">
+    <div class="pista" style="--pc:#2f5d57"><h4>Track A · Complicated</h4><p class="cond">experts and a solution exist, structured analysis is missing</p><p class="seq">IRD → KAC → IST → RIL → QIC → ACH → S09-close → SCQA</p></div>
+    <div class="pista" style="--pc:#b07d2a"><h4>Track B · Complex</h4><p class="cond">actors, feedback loops, structural uncertainty</p><p class="seq">IRD → KAC → SHA → S09 → SBT-A → RIL → CLM/SAF → ISA → S09-close → SCQA</p></div>
+    <div class="pista" style="--pc:#9c3d2e"><h4>Track C · High-stakes</h4><p class="cond">high cost of error, a committed decision</p><p class="seq">IRD → KAC → QIC → ACH → DVA → PM → ACR-T → SCQA</p></div>
+    <div class="pista" style="--pc:#5a6e2f"><h4>Track D · Simple / urgent</h4><p class="cond">familiar domain, limited time</p><p class="seq">IRD → KAC → S09-close → SCQA</p></div>
+  </div>
+
+  <div class="callout accent"><h4>Optional detour mid-analysis: the canvas for thinking &nbsp;<span class="mono" style="font-size:12px">CVS</span></h4><p>If <b>three or more unresolved tensions</b> pile up during a track (typically in the complex tracks, after questions are generated), the system can propose an <b>interactive thinking artifact</b> —a canvas or map the person fills in, selects from, and annotates— to resolve those tensions before continuing. It is not the final output: it's an intermediate tool that prevents <em>premature synthesis</em> (closing on conclusions before resolving what they depend on). The same format can reappear at the end as an output form, but its use here is to <em>flex</em> the analysis midway.</p></div>
+
+  <div class="flow">
+    <p class="zone-label">▼ the four converge here ▼ &nbsp; Exit stretch and quality checks</p>
+    <div class="node gate"><div class="code">11</div><div><div class="nname-row"><span class="nname">S09 close</span><span class="badge">never skippable</span></div><span class="ng">Looks for blind spots in the argument once it's formed.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node wait"><div class="code">11.3</div><div><div class="nname-row"><span class="nname">Ghostwriting Gate</span></div><span class="ng">Verifies the result isn't an echo of the person's input left untested, nor a mere reshuffling of sources. Flags anything unverified in plain sight.</span><span class="wait-tag">⏸ integrity check</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node opt"><div class="code">11.5</div><div><div class="nname-row"><span class="nname">ARF</span><span class="badge">invisible · reduced in some modes</span></div><span class="ng">Quick epistemic-quality check: does the stated confidence match the evidence?</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node"><div class="code">11.7</div><div><div class="nname-row"><span class="nname">Output classifier</span></div><span class="ng">Decides the output form: report, interactive canvas, or map.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node crit"><div class="code">—</div><div><div class="nname-row"><span class="nname">SAT-Auditor</span><span class="badge">gate · between S09-close and ACR-T</span></div><span class="ng"><b>Quality check #1 — the structure.</b> Assesses the soundness of the <em>analysis</em>: do the steps fit? are there logical jumps?</span><span class="crit-tag">quality · process</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node crit"><div class="code">12</div><div><div class="nname-row"><span class="nname">ACR-T</span><span class="badge">mandatory gate</span></div><span class="ng"><b>Quality check #2 — the text.</b> Audits the executive output before delivering it. If it hasn't run → STOP. (Inactive in Challenge-me and Only-ask-me, which don't produce finished text.)</span><span class="crit-tag">quality · text</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node opt"><div class="code">12.3</div><div><div class="nname-row"><span class="nname">PM</span><span class="badge">conditional · mandatory in high-stakes and Challenge-me</span></div><span class="ng">Premortem: imagine the failure and work backward to its causes.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node opt"><div class="code">12.5</div><div><div class="nname-row"><span class="nname">ACF</span><span class="badge">inactive in Only-ask-me</span></div><span class="ng">Research agenda for whatever uncertainties remain open.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node gate"><div class="code">13</div><div><div class="nname-row"><span class="nname">SCQA</span><span class="badge">not skippable</span></div><span class="ng">Final narrative-coherence test: does the story close (situation → complication → question → answer)?</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node"><div class="code">→</div><div><span class="nname">Publish (SAT publish)</span><span class="ng">The analysis is published: it goes out in the form the classifier chose (report, canvas, or map) and adapted to the receiver. This is the flow's final state.</span></div></div>
+  </div>
+
+  <div class="callout teal"><h4>Quality control works on two levels</h4><p>In the exit stretch there are two back-to-back, complementary checks: the <b>SAT-Auditor</b> reviews the <em>structure</em> of the analysis and, right after, <b>ACR-T</b> reviews the <em>text</em> of the output. They aren't substitutes — one looks at the reasoning, the other at how it's written.</p></div>
+
+  <div class="callout accent"><h4>Design note: the gates live inside the sequence</h4><p>The gates (mode, plan confirmation, closing checks) aren't separate sections: they're numbered <b>within</b> the path, in the order they must be read. If a gate lives outside the execution path, a system in a hurry can skip it and start the analysis without passing through. Writing them into the sequence is what guarantees they're respected.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="seclabel">What runs beneath everything</p>
+  <h2>The cross-cutting layers</h2>
+  <p>The path reads like a sequence, but some things <b>aren't steps</b>: they accompany every step, reading and writing nonstop. They don't appear in the vertical chain because they don't happen "at one point" — they're there the whole time. The faint bars indicate that each layer spans the entire flow.</p>
+
+  <div class="layers">
+    <div class="layer" style="--lc:#2f5d57">
+      <div class="lh"><h4>ELD · evidence memory</h4><span class="ltag">reads and writes at every step</span></div>
+      <p>It's not the "[0]" step that's opened and forgotten: it's the session's cumulative memory. Each skill <b>reads it on entry</b> (to avoid duplication and build on what came before) and <b>writes on exit</b> what it added: assumptions, hypotheses, blind spots, evidence assessed. If it's nearly empty at close, the system flags it.</p>
+      <div class="span"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="layer" style="--lc:#b07d2a">
+      <div class="lh"><h4>Reading the person · every turn</h4><span class="ltag">modulates, doesn't decide</span></div>
+      <p>On each turn, the system silently reads seven signals —length, tone, sharpness, initiative…— and adjusts the <em>intensity</em> of its work within the chosen mode. Strict rule: it can modulate how much it pushes, but it <b>never switches mode silently</b>.</p>
+      <div class="span"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="layer" style="--lc:#9c3d2e">
+      <div class="lh"><h4>Risk and tradecraft · CRM + Tradecraft</h4><span class="ltag">built into every skill</span></div>
+      <p>Each skill carries a cognitive-risk profile it watches and a set of shared quality standards (how certainty is expressed, how evidence is cited, the quality check on every question). These aren't steps on the path: they're the quality substrate all of them share.</p>
+      <div class="span"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="layer" style="--lc:#221e18">
+      <div class="lh"><h4>Language filter · everything visible, in plain words</h4><span class="ltag">top priority</span></div>
+      <p>Nothing shown carries technical names, acronyms, or internal structures: the machinery is translated into ordinary language before it appears. It's the system's absolute limit on what the person can see — above any other rule.</p>
+      <div class="span"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <div class="callout"><h4>And a fifth, in its own section</h4><p>The <b>state machine</b> (below) is cross-cutting too: it watches in the background for whether the session drifts, pauses, or gets lost, and steers it back. Five layers, then, running beneath the visible path.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="seclabel">Same flow, five tempos</p>
+  <h2>How it changes with the mode</h2>
+  <p>The working mode <b>doesn't change which steps run</b> —the track decides that— nor does it relax any gate. What changes is <b>how often the flow stops and hands the turn back to the person</b> as it moves down the pipeline. From "runs the whole thing, then you review" to "one question at a time."</p>
+
+  <div class="modes">
+    <div class="moderow">
+      <div class="mhead"><span class="mletter">A</span><span class="mname">Autonomous + review</span><span class="mdesc">Runs the pipeline without pauses; opens a structured review at the end.</span></div>
+      <div class="track"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell rev"></span></div>
+    </div>
+    <div class="moderow">
+      <div class="mhead"><span class="mletter">B</span><span class="mname">Just give me the analysis</span><span class="mdesc">Minimal friction, no review phase. Arrives whole, all at once.</span></div>
+      <div class="track"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></div>
+    </div>
+    <div class="moderow">
+      <div class="mhead"><span class="mletter">C</span><span class="mname">Guide me</span><span class="mdesc">Pauses at key decisions; anchors the context at each transition.</span></div>
+      <div class="track"><span class="cell"></span><span class="cell"></span><span class="cell p"></span><span class="cell"></span><span class="cell"></span><span class="cell p"></span><span class="cell"></span><span class="cell p"></span></div>
+    </div>
+    <div class="moderow">
+      <div class="mhead"><span class="mletter">D</span><span class="mname">Challenge me</span><span class="mdesc">One piece at a time; each is closed before moving on. (Here the premortem is mandatory.)</span></div>
+      <div class="track"><span class="cell p"></span><span class="cell p"></span><span class="cell"></span><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span><span class="cell"></span><span class="cell p"></span></div>
+    </div>
+    <div class="moderow">
+      <div class="mhead"><span class="mletter">E</span><span class="mname">Only ask me</span><span class="mdesc">Questions only, one per turn; the person builds. The system doesn't assert.</span></div>
+      <div class="track"><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span><span class="cell p"></span></div>
+    </div>
+  </div>
+  <div class="trackcap" style="margin-top:12px">
+    <span><span class="ck" style="background:var(--line-soft)"></span> the system moves on its own</span>
+    <span><span class="ck" style="background:var(--gold)"></span> stops and hands the turn back</span>
+  </div>
+
+  <div class="callout"><h4>The invariant the bars don't show</h4><p>Whatever happens to the pace, the <b>mandatory gates don't relax in any mode</b>: the mode gate, the plan confirmation, S09-close, both quality checks, and the final SCQA run the same in "just give me the analysis" as in "challenge me." The mode governs <em>when a turn comes up</em>, not which checks apply. That's why going fast doesn't mean going without a net.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="seclabel">When something goes off-script</p>
+  <h2>The state machine</h2>
+  <p>The path above shows the route when all goes well. The system also has a <b>state machine</b> for when it doesn't: the person leaves and comes back, wanders off, or loses the thread. These are the <em>loops back</em> that a linear diagram doesn't show.</p>
+
+  <p class="zone-label">A session's nine states</p>
+  <div class="states">
+    <span class="st">PRE_ENTRADA</span><span class="st">OPEN</span><span class="st">AWAITING_CONFIRMATION</span><span class="st">CLOSED</span><span class="st">EXPORTED</span>
+    <span class="st res">DEVIATING</span><span class="st res">RECOVERED</span><span class="st res">PAUSED</span><span class="st res">DEGRADED</span>
+  </div>
+  <p style="font-size:14px; margin-top:2px">In grey, the normal route. In gold, the <b>resilience</b> states — the ones that kick in when the course has to be recovered.</p>
+
+  <p class="zone-label">Three situations</p>
+  <div class="scn">
+    <h4>1 · The person leaves and returns later</h4>
+    <div class="chain2"><span class="pill">OPEN</span><span class="a">→</span><span class="pill hot">PAUSED</span><span class="a">→</span><span class="pill">OPEN</span><span style="color:var(--muted)">&nbsp;·&nbsp; or &nbsp;</span><span class="pill">CLOSED</span><span class="a">→</span><span class="pill hot">EXPORTED</span><span class="a">→</span><span class="pill">resumes in a new session</span></div>
+    <p>The state is preserved (PAUSED) or exported (EXPORTED) with a resume note and the last confirmed point. On return, the <span class="mono">SESSION_RESUME</span> branch skips the initial elicitation: it doesn't force repeating the context.</p>
+  </div>
+  <div class="scn">
+    <h4>2 · Wandering and re-steering &nbsp;<span class="mono" style="font-size:12px;color:var(--accent)">REANCHOR</span></h4>
+    <div class="chain2"><span class="pill">OPEN</span><span class="a">→</span><span class="pill hot">DEVIATING</span><span class="a">→ [REANCHOR] →</span><span class="pill hot">RECOVERED</span><span class="a">→</span><span class="pill">OPEN</span></div>
+    <p>When it detects the thread has gone off the rails, it <b>stops and re-anchors</b> before continuing. It offers two ways out: resume from the last confirmed point, or discard and start clean. It communicates this in plain language, no acronyms. Integrity rule: you can't return to OPEN without passing through RECOVERED.</p>
+  </div>
+  <div class="scn">
+    <h4>3 · The thread is lost entirely &nbsp;<span class="mono" style="font-size:12px;color:var(--muted)">last-resort net</span></h4>
+    <div class="chain2"><span class="pill hot">DEVIATING</span><span class="a">→</span><span class="pill">rebuild state from the messages</span><span class="a">→</span><span class="pill">warn + offer to continue / restart</span></div>
+    <p>In the severe case (state lost, or output delivered without the closing checks), the system <b>reconstructs the session backward</b> from what was said, warns, and lets the person choose. It's the net that keeps a broken session from ending in an uncontrolled result.</p>
+  </div>
+
+  <div class="callout teal"><h4>Why it matters</h4><p>These paths make the session <b>recoverable</b>: it can be paused, resumed, and re-steered without losing the work done. And they let the kind of problem change midway —which is common, because the real problem often reveals itself through analysis— without the system rigorously solving the wrong problem.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="seclabel">Inside the router</p>
+  <h2>How it decides what to do</h2>
+  <p>Step <span class="mono">[1] SkillRouter</span> has three steps of its own. This is where it's decided whether the request enters analysis or not.</p>
+  <div class="flow">
+    <div class="node gate"><div class="code">P1</div><div><span class="nname">Class prefilter</span><span class="ng">What kind of request is this? Four paths:</span></div></div>
+  </div>
+  <div class="branch">
+    <div class="bopt main"><h4>Analysis</h4><p>Understand, diagnose, evaluate → <span class="mono">continue to Step 2</span> (the only one that enters the pipeline).</p></div>
+    <div class="bopt"><h4>Generation</h4><p>Create or draft → <span class="mono">SCQA + REC</span>, no analytical pipeline.</p></div>
+    <div class="bopt"><h4>Direct evaluation</h4><p>Review a text or offer → <span class="mono">ACR-T or QIC</span>, no pipeline.</p></div>
+    <div class="bopt"><h4>Ambiguous</h4><p>Unclear what's being asked → <span class="mono">ask</span> before continuing.</p></div>
+  </div>
+  <div class="flow">
+    <div class="arrow">▼</div>
+    <div class="node"><div class="code">P2</div><div><span class="nname">Object detection</span><span class="ng">Only if it was analysis: identifies the kind of problem (decision, diagnosis, foresight…) and declares it, waiting for confirmation.</span></div></div>
+    <div class="arrow">▼</div>
+    <div class="node"><div class="code">P3</div><div><span class="nname">Pipeline by object</span><span class="ng">Each kind carries its own pipeline — which is one of the four tracks from the master path, adapted to the object.</span></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">SAT Core · flow diagrams · canonical sequence · tracks by domain · working modes · state machine</div></footer>
+</body>
+</html>
